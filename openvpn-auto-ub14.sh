@@ -8,8 +8,6 @@ fi
 
 #install openvpn
 
-Y | apt-get purge openvpn easy-rsa;
-Y | apt-get purge squid3;
 apt-get update
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
@@ -40,27 +38,11 @@ sed -i $MYIP2 /etc/openvpn/client.ovpn;
 cp client.ovpn /root/
 
 ufw allow ssh
-ufw allow 443/tcp
+ufw allow 1194/tcp
 ufw allow 8080/tcp
 ufw allow 3128/tcp
 ufw allow 80/tcp
 yes | sudo ufw enable
-
-# setting port ssh
-cd
-sed -i 's/Port 22/Port 22/g' /etc/ssh/sshd_config
-sed -i '/Port 22/a Port 143' /etc/ssh/sshd_config
-service ssh restart
-
-# instalar dropbear
-apt-get -y install dropbear
-sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=443/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 443 -p 80"/g' /etc/default/dropbear
-echo "/bin/false" >> /etc/shells
-echo "/usr/sbin/nologin" >> /etc/shells
-service ssh restart
-service dropbear restart
 
 # download script
 	wget -O /usr/local/bin/menu "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/Menu"
