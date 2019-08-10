@@ -55,7 +55,7 @@ ufw allow 80/tcp
 yes | sudo ufw enable
 
 # download script
-cd /usr/bin
+cd /usr/local/bin
 wget -O g1 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/userlist.sh"
 wget -O g2 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/rmenu.sh"
 wget -O g3 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/useradd.sh"
