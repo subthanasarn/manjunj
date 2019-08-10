@@ -22,7 +22,7 @@ if   [[ ! -e /usr/local/bin/Check-Thai ]]; then
 	echo -e "MENU SCRIPT ${GRAY}MyGatherBK-VPN${NC}"
 	echo ""
 	echo -e "|${GRAY} 1${NC}| เปลี่ยนรหัสผ่านบัญชีผู้ใช้"
-	echo -e "|${GRAY} 2${NC}| -
+	echo -e "|${GRAY} 2${NC}| -"
 	echo -e "|${GRAY} 3${NC}| เพิ่มชื่อผู้ใช้งาน  SSH (HTTP)"
 	echo -e "|${GRAY} 4${NC}| ติดตั้ง พร็อกซี่ SQUID PROXY "
 	echo -e "|${GRAY} 5${NC}| กำหนด 1 ไฟล์เชื่อมต่อได้หลายเครื่อง"
