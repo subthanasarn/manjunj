@@ -282,7 +282,7 @@ service openvpn restart
 sed -i '28d' /etc/openvpn/server.conf
 sed -i '28d' /etc/openvpn/server.conf
 sed -i '28d' /etc/openvpn/server.conf
-if [[ "$VERSION_ID" = 'VERSION_ID="7"' ]]; then
+if [[ "$VERSION_ID" = 'VERSION_ID="9"' ]]; then
 	echo "plugin /usr/lib/openvpn/openvpn-auth-pam.so /etc/pam.d/login" >> /etc/openvpn/server.conf
 	echo "client-cert-not-required" >> /etc/openvpn/server.conf
 	echo "username-as-common-name" >> /etc/openvpn/server.conf
@@ -291,7 +291,7 @@ else
 	echo "client-cert-not-required" >> /etc/openvpn/server.conf
 	echo "username-as-common-name" >> /etc/openvpn/server.conf
 fi
-echo "auth-user-pass" >> /etc/openvpn/client.ovpn
+echo "auth-user-pass" >> /etc/openvpn/client-common.txt
 echo ""
 echo "ปรับเปลี่ยนระบบของเซิฟเวอร์เป็นรูปแบบที่ 2 เรียบร้อย"
 echo ""
@@ -304,7 +304,6 @@ service openvpn restart
 sed -i '28d' /etc/openvpn/server.conf
 sed -i '28d' /etc/openvpn/server.conf
 sed -i '28d' /etc/openvpn/server.conf
-sed -i '20d' /etc/openvpn/client-common.txt
 echo "duplicate-cn" >> /etc/openvpn/server.conf
 echo ""
 echo "ปรับเปลี่ยนระบบของเซิฟเวอร์เป็นรูปแบบที่ 3 เรียบร้อย"
