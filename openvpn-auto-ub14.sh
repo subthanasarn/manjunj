@@ -54,13 +54,29 @@ ufw allow 3128/tcp
 ufw allow 80/tcp
 yes | sudo ufw enable
 
+# setting port ssh
+cd
+sed -i 's/Port 22/Port 22/g' /etc/ssh/sshd_config
+sed -i '/Port 22/a Port 143' /etc/ssh/sshd_config
+service ssh restart
+
+# instalar dropbear
+apt-get -y install dropbear
+sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=443/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 443 -p 80"/g' /etc/default/dropbear
+echo "/bin/false" >> /etc/shells
+echo "/usr/sbin/nologin" >> /etc/shells
+service ssh restart
+service dropbear restart
+
 # download script
 cd /usr/local/bin
 wget -O g1 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/userlist.sh"
-wget -O g2 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/rmenu.sh"
+wget -O g2 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/menu.sh"
 wget -O g3 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/useradd.sh"
 wget -O g4 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/userlogin.sh"
-wget -O g5 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master//speedtest_cli.py"
+wget -O g5 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/speedtest_cli.py"
 wget -O g6 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/deluser.sh"
 wget -O g7 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/trial.sh"
 wget -O g8 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/multiple.sh"
