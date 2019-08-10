@@ -32,13 +32,6 @@ rm before.rules
 rm ufw
 service openvpn restart
 
-#install squid3
-
-apt-get -y install squid3;
-cp /etc/squid3/squid.conf /etc/squid3/squid.conf.bak
-wget -O /etc/squid3/squid.conf "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/squid.conf"
-sed -i $MYIP2 /etc/squid3/squid.conf;
-service squid3 restart
 
 #config client
 cd /etc/openvpn/
@@ -47,7 +40,6 @@ sed -i $MYIP2 /etc/openvpn/client.ovpn;
 cp client.ovpn /root/
 
 ufw allow ssh
-ufw allow 1194/tcp
 ufw allow 443/tcp
 ufw allow 8080/tcp
 ufw allow 3128/tcp
@@ -71,26 +63,8 @@ service ssh restart
 service dropbear restart
 
 # download script
-cd /usr/local/bin
-wget -O g1 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/userlist.sh"
-wget -O g2 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/menu.sh"
-wget -O g3 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/useradd.sh"
-wget -O g4 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/userlogin.sh"
-wget -O g5 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/speedtest_cli.py"
-wget -O g6 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/deluser.sh"
-wget -O g7 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/trial.sh"
-wget -O g8 "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/multiple.sh"
-echo "0 0 * * * root /usr/bin/reboot" > /etc/cron.d/reboot
-#echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
-chmod +x g1
-chmod +x g2
-chmod +x g3
-chmod +x g4
-chmod +x g5
-chmod +x g6
-chmod +x g7
-chmod +x g8
-clear
+	wget -O /usr/local/bin/menu "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/Menu"
+	chmod +x /usr/local/bin/menu
 
 printf '###############################\n'
 printf '# Create by Pirakit Khawpleum" #\n'
