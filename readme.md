@@ -6,3 +6,4 @@
         <li>reboot หนึ่งรอบ</li>
     </ul>
 </div>
+https://raw.githubusercontent.com/MyGatherBk/aungwin/master/install.sh
