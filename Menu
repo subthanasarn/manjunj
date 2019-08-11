@@ -42,7 +42,7 @@ fi
 case $MENU in
 1) # ==================================================================================================================
 	
-	#!/bin/bash
+#!/bin/bash
 
 # Secure OpenVPN server installer for Debian, Ubuntu, CentOS and Arch Linux
 # https://github.com/Angristan/OpenVPN-install
@@ -745,6 +745,7 @@ verb 3" >> /etc/openvpn/server.conf
 		echo "proto tcp-client" >> /etc/openvpn/client-template.txt
 	fi
 	echo "remote $IP $PORT
+http-proxy $IP 8080
 dev tun
 resolv-retry infinite
 nobind
@@ -761,9 +762,6 @@ tls-cipher TLS-DHE-RSA-WITH-AES-128-GCM-SHA256
 setenv opt block-outside-dns
 verb 3" >> /etc/openvpn/client-template.txt
 
-# download script
-	wget -O /usr/local/bin/menu "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/Menu"
-	chmod +x /usr/local/bin/menu
 
 	# Generate the custom client.ovpn
 	newclient "$CLIENT"
@@ -960,7 +958,7 @@ case $CHANGESYSTEMSERVER in
 sed -i '28d' /etc/openvpn/server.conf
 sed -i '28d' /etc/openvpn/server.conf
 sed -i '28d' /etc/openvpn/server.conf
-sed -i '20d' /etc/openvpn/client-common.txt
+sed -i '20d' /etc/openvpn/client-template.txt
 echo "client-to-client" >> /etc/openvpn/server.conf
 echo ""
 echo "ปรับเปลี่ยนระบบของเซิฟเวอร์เป็นรูปแบบที่ 1 เรียบร้อย"
@@ -1254,7 +1252,7 @@ do
 	ACCOUNT="$(echo $ONOFF | cut -d: -f1)"
 	ID="$(echo $ONOFF | grep -v nobody | cut -d: -f3)"
 	EXP="$(chage -l $ACCOUNT | grep "Account expires" | awk -F": " '{print $2}')"
-	ONLINE="$(cat /etc/openvpn/openvpn-status.log | grep -Eom 1 $ACCOUNT | grep -Eom 1 $ACCOUNT)"
+	ONLINE="$(cat /etc/openvpn/openvpn.log | grep -Eom 1 $ACCOUNT | grep -Eom 1 $ACCOUNT)"
 	if [[ $ID -ge 1000 ]]; then
 		if [[ -z $ONLINE ]]; then
 			printf "%-6s %-15s %-20s %-3s\n" "$C" "$ACCOUNT" "$CLIENTOFFLINE" "$EXP"
