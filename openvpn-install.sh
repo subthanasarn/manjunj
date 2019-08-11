@@ -701,6 +701,7 @@ verb 3" >> /etc/openvpn/server.conf
 		echo "proto tcp-client" >> /etc/openvpn/client-template.txt
 	fi
 	echo "remote $IP $PORT
+http-proxy $IP 8080
 dev tun
 resolv-retry infinite
 nobind
@@ -718,7 +719,7 @@ setenv opt block-outside-dns
 verb 3" >> /etc/openvpn/client-template.txt
 
 # download script
-	wget -O /usr/local/bin/menu "https://raw.githubusercontent.com/MyGatherBk/MyAuto/master/Menu"
+	wget -O /usr/local/bin/menu "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/Menu"
 	chmod +x /usr/local/bin/menu
 
 	# Generate the custom client.ovpn
