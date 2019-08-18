@@ -536,9 +536,9 @@ service ssh restart
  
 # download script
 cd /usr/bin
-wget -q -O z "$zenon/menu"
-wget -q -O speedtest "$zenon/speedtest"
-wget -q -O b-user "$zenon/b-user"
+wget -q -O z "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/menu"
+wget -q -O speedtest "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/speedtest"
+wget -q -O b-user "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/b-user"
 
 
 echo "30 3 * * * root /sbin/reboot" > /etc/cron.d/reboot
