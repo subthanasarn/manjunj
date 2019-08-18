@@ -262,7 +262,7 @@ clear
         ┣ หมดอายุ  : $Today      
         ┣━━━━━━━━━━━━━━━━━━━━━━━━━╯ 
         ┣ ดาวน์โหลดไฟล์ Openvpn ⬇️⬇️
-        ┣ http://$IP/file/$username.ovpn
+        ┣ http://$IP:85/file/$username.ovpn
         ┣━━━━━━━━━━━━━━━━━━━━━━━━━ "
 		echo ""
  
