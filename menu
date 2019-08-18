@@ -1,4 +1,33 @@
 #!/bin/bash
+echo ""
+echo ""
+echo ""
+echo -e "\e[33;1m    =============== OS-32 & 64-bit ================    "
+echo -e "\e[33;1m    #                                             #    "
+    sleep 0.01
+echo -e "\e[33;1m    #       AUTOSCRIPT CREATED BY PIRAKIT     #    "
+    sleep 0.01
+echo -e "\e[33;1m    #       -----------About Us------------       #    "
+    sleep 0.01
+echo -e "\e[33;1m    #    Thanachart Bank : 270-6-01665-2             #    "
+    sleep 0.01
+echo -e "\e[33;1m    #    Truemoney Wallet : 096-746-2978            #    "
+    sleep 0.01
+echo -e "\e[33;1m    #               { VPN / SSH }                 #    "
+    sleep 0.01
+echo -e "\e[33;1m    #                  NAMNUEA                    #    "
+    sleep 0.01
+echo -e "\e[33;1m    #         BY : Pirakit Khawpleum        #    "
+    sleep 0.01
+echo -e "\e[33;1m    #    FB : https://m.me/pirakrit.khawplum        #    "
+    sleep 0.01
+echo -e "\e[33;1m    #                                             #    "
+echo -e "\e[33;1m    =============== OS-32 & 64-bit ================    "
+    sleep 0.01
+echo -e "\e[35m                            ไอพีเซิฟ:$IP                     "
+echo ""
+echo ""
+echo ""
 #IP
 zenon="https://raw.githubusercontent.com/MyGatherBk/aungwin/master"
 rm -f menu
@@ -41,19 +70,11 @@ fi
 
 
 
-if [ -e '/usr/bin/cr' ]; then
-	echo 
-else
-echo "" > /usr/bin/cr
-chmod +x /usr/bin/cr
-sed -i '/^$/d' /usr/bin/cr
-fi
-
 clear
 clear 
 echo -e ""
 	echo -e "\033[1;31m-------------------------------------------------------" 
-	echo -e "\033[1;32m>>>>>    [ ระบบสคริป  : PRATYASART THEEJANMART ]    <<<<<   " 
+	echo -e "\033[1;32m>>>>>    [ ระบบสคริป  : Pirakit Khawpleum ]    <<<<<   " 
 	echo -e "\033[1;31m-------------------------------------------------------" 
 sleep 0.01
 echo -e "\033[1;31m { 01 } เพิ่มผู้ใช้ บัญชี ssh-vpn "
@@ -212,22 +233,20 @@ else
 	read -p " ┣ Expire   : " AKTIF
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━╮  
-           ┣ เลือกซิมที่จะใช้ไฟล์นี้ 
-           ┣━━━━━━━━━━━━━━━╯
-           ┣ 1. Trueid
-           ┣ 2. Dtacไวเบอร์
-           ┣ 3. Dtacโซเชี่ยว 
-           ┣ 4. True face+line (*935*99#)
-           ┣ 5. Trueปลูกปัญญา
-           ┣ 6. AIS64kbps 
-           ┣ 7. AISplay
-           ┣ 8. client "
-	read -p " ┣ " zenonnew
+echo  " ############# เลือกซิมที่จะใช้ไฟล์นี้ #############
+           ## 1. Trueid
+           ## 2. Dtacไวเบอร์
+           ## 3. Dtacโซเชี่ยว 
+           ## 4. True face+line (*935*99#)
+           ## 5. Trueปลูกปัญญา
+           ## 6. AIS64kbps 
+           ## 7. AISplay
+           ## 8. client "
+	read -p " ## " zenonnew
 	if [[ "$zenonnew" = "" ]]; then
 clear
 clear
-echo -e "${z1}#############พิมพ์คำสั่งไม่ถูกต้อง #############${z7}"
+echo -e "${z1} ############# พิมพ์คำสั่งไม่ถูกต้อง ############# ${z7}"
 echo -e ""
 	exit
 	elif [[ "$zenonnew" = "1" ]]; then
@@ -253,17 +272,15 @@ fi
 	echo $username:$password | chpasswd
 clear
 clear        
-  echo "╭━━━━━━━━━━━━━━━━━━━━━╮         
-        ┃  Open VPN พร้อมใช้งาน  
-        ┣━━━━━━━━━━━━━━━━━━━━╯ 
-        ┣ ไอพี     : $IP          
-        ┣ ชื่อผู้ใช้   : $username         
-        ┣ รหัสผ่าน  : $password           
-        ┣ หมดอายุ  : $Today      
-        ┣━━━━━━━━━━━━━━━━━━━━━━━━━╯ 
-        ┣ ดาวน์โหลดไฟล์ Openvpn ⬇️⬇️
-        ┣ http://$IP:85/file/$username.ovpn
-        ┣━━━━━━━━━━━━━━━━━━━━━━━━━ "
+  echo " ############# Open VPN พร้อมใช้งาน ############# 
+         ## ไอพี     : $IP          
+         ## ชื่อผู้ใช้   : $username         
+         ## รหัสผ่าน  : $password           
+         ## หมดอายุ  : $Today      
+        ###############################################   
+        ## ดาวน์โหลดไฟล์ Openvpn ## 
+        ## http://$IP:85/file/$username.ovpn ## 
+        ############################################### "
 		echo ""
  
 cat > /home/vps/public_html/file/$username.ovpn <<-END
@@ -309,9 +326,7 @@ clear
 	if [[ "$zenonnew" = "" ]]; then
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣   พิมพ์คำสั่งไม่ถูกต้อง
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "${z1} ############# พิมพ์คำสั่งไม่ถูกต้อง ############# ${z7}"
 echo -e ""
 	exit
 	elif [[ "$zenonnew" = "1" ]]; then
@@ -340,17 +355,15 @@ useradd -e `date -d "$Day days" +"%Y-%m-%d"` -s /bin/false -M $Login
 echo -e "$Passwd\n$Passwd\n"|passwd $Login &> /dev/null
 clear
 clear
-  echo "╭━━━━━━━━━━━━━━━━━━━━━━━━━╮  
-        ┃  Open VPN พร้อมใช้งาน  
-        ┣━━━━━━━━━━━━━━━━━━━━━╯ 
-        ┣ ไอพี     : $IP          
-        ┣ ชื่อผู้ใช้   : $Login         
-        ┣ รหัสผ่าน  : $Passwd           
-        ┣ หมดอายุ  : $Day      
-        ┣━━━━━━━━━━━━━━━━━━━━━━━━━╯ 
-        ┣ ดาวน์โหลดไฟล์ Openvpn ⬇️⬇️
-        ┣ http://$IP/file/$Login.ovpn
-        ┣━━━━━━━━━━━━━━━━━━━━━━━━━ "
+  echo " ############# Open VPN พร้อมใช้งาน #############    
+         ## ไอพี     : $IP          
+         ## ชื่อผู้ใช้   : $Login         
+         ## รหัสผ่าน  : $Passwd           
+         ## หมดอายุ  : $Day      
+         ####################################################
+         ## ดาวน์โหลดไฟล์ Openvpn ## 
+         ## http://$IP:85/file/$Login.ovpn
+         ####################################################"
 		echo ""
 
 cat > /home/vps/public_html/file/$Login.ovpn <<-END
@@ -460,9 +473,7 @@ exit
 esac
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣  พิมพ์คำสั่งไม่ถูกต้อง
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "${z1} ############# พิมพ์คำสั่งไม่ถูกต้อง ############# ${z7}"
 echo -e ""
 exit
 ;;
@@ -472,9 +483,7 @@ exit
 clear
 clear
 echo
-echo  "    ╭━━━━━━━━━━━━━━━━╮  
-           ┣ ใส่ชื่อผู้ใช้ที่จะเปลียนวันหมดอายุ
-           ╰━━━━━━━━━━━━━━━━╯"
+echo  " ############# ใส่ชื่อผู้ใช้ที่จะเปลียนวันหมดอายุ ############# "
 read -p " : " namer
 echo "กำหนดวันหมดอายุตัวอย่าง 2018/12/30 "
 read -p " : " date
@@ -496,15 +505,12 @@ read -p " ใส่ผู้ใช้ที่จะลบ : " User
 if getent passwd $User > /dev/null 2>&1; then
         userdel $User
 clear
-clearo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣    ลบ $User เรียบร้อยุ
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+clear
+echo -e "${z1} ############# ใส่ชื่อผู้ใช้ที่จะเปลียนวันหมดอายุ ############# ${z7}"
 else
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣   ไม่พบ $User ในระบบ
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "${z1} ############# ไม่พบ $User ในระบบ ############# ${z7}"
 fi
 
 exit
@@ -587,9 +593,7 @@ echo "
 read -p "  : " Login
 usermod -L $Login
 echo -e ""
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣   ชื่่่อผู้ใช้ $Login ถูกแบนเรียบร้อย
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "${z1} ############# ชื่่่อผู้ใช้ $Login ถูกแบนเรียบร้อย ############# ${z7}"
 echo -e ""  
 exit
 ;;
@@ -605,9 +609,7 @@ read -p " : " Login
 
 usermod -U $Login
 echo -e ""
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣   ชื่่่อผู้ใช้ $Login ใช้งานได้ตามปกติ  
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "${z1} ############# ชื่่่อผู้ใช้ $Login ใช้งานได้ตามปกติ ############# ${z7}"
 echo -e ""
 
 exit
@@ -931,9 +933,7 @@ IF="$(ip ro | awk '$1 == "default" { print $5 }')"
 esac
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣   พิมพ์คำสั่งไม่ถูกต้อง
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "${z1} ############# พิมพ์คำสั่งไม่ถูกต้อง ############# ${z7}"
 echo -e ""
 exit
 ;;
@@ -998,9 +998,7 @@ grep -E "^duplicate-cn" /etc/openvpn/1194.conf >/dev/null
  if [ $? -eq 0 ]; then
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━╮  
-           ┣ สถานะ ปัจจุบัณเชื่อมได้ไม่จำกัดเครื่อง
-           ╰━━━━━━━━━━━━━━━━╯"
+echo  " ############# สถานะ ปัจจุบัณเชื่อมได้ไม่จำกัดเครื่อง ############# "
 
 read -p " เปลียนเป็นจำกัดยุสเซอต่อเครื่องหรือไม่ Y/n :" selet
 if [[ "$selet" = "Y" || "$selet" = "y" ]]; then
@@ -1009,23 +1007,17 @@ sed -i $zenonnewvpn /etc/openvpn/1194.conf
 service openvpn restart -q > /dev/null 2>&1
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━╮  
-           ┣ สถานะ เปลียนเป็น 1ยุสเซอ ต่อ1เครื่อง
-           ╰━━━━━━━━━━━━━━━━╯"
+echo  " ############# สถานะ เปลียนเป็น 1ยุสเซอ ต่อ1เครื่อง ############# "
 exit
 fi
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━╮  
-           ┣ สถานะ ปัจจุบัณเชื่อมได้ไม่จำกัดเครื่อง
-           ╰━━━━━━━━━━━━━━━━╯"
+echo  " ############# สถานะ ปัจจุบัณเชื่อมได้ไม่จำกัดเครื่อง ############# "
 exit
  else
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━╮  
-           ┣ สถานะ ปัจจุบัน 1ยุสเซอ ต่อ1เครื่อง
-           ╰━━━━━━━━━━━━━━━━╯"
+echo  " ############# สถานะ ปัจจุบัน 1ยุสเซอ ต่อ1เครื่อง ############# "
 
 read -p " เปลียนเป็นไม่จำกัดเครื่องหรือไม่ Y/n :" selet
 if [[ "$selet" = "Y" || "$selet" = "y" ]]; then
@@ -1033,17 +1025,12 @@ echo "duplicate-cn" >> /etc/openvpn/1194.conf
 service openvpn restart -q > /dev/null 2>&1
 clear
 clear
-cr
-echo  "    ╭━━━━━━━━━━━━━━━━━━╮  
-           ┣ สถานะ เปลียนเป็นเชื่อมได้ไม่จำกัดเครื่อง
-           ╰━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# สถานะ ปัจจุบัน 1ยุสเซอ ต่อ1เครื่อง ############# "
 exit
 fi
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━╮  
-           ┣ สถานะ ปัจจุบัน 1ยุสเซอ ต่อ1เครื่อง
-           ╰━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# สถานะ ปัจจุบัน 1ยุสเซอ ต่อ1เครื่อง ############# "
 exit
 fi
 ;;
@@ -1139,20 +1126,16 @@ des() {
 }
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣ การตั้งค่า Proxy
-           ╰━┳━━━━━━━━━━━━━━━╯
-              ┣ 1. เปิดปิดใช้งานไม่จำกัด IP
-              ┣ 2. ตั้งค่าไอพี 
-              ┣ 3. ตั้งค่าพอร์ต  "
- read -p "    ╰━━ พิมพ์ตัวเลข  : " zenonnew
+echo  " ############# การตั้งค่า Proxy ############# 
+              ## 1. เปิดปิดใช้งานไม่จำกัด IP
+              ## 2. ตั้งค่าไอพี 
+              ## 3. ตั้งค่าพอร์ต  "
+ read -p "    ##  พิมพ์ตัวเลข  : " zenonnew
 
 if [[ "$zenonnew" = "" ]]; then
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣    พิมพ์คำสั่งไม่ถูกต้อง
-                  ╰━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "${z1} ############# พิมพ์คำสั่งไม่ถูกต้อง ############# ${z7}"
 echo -e ""
  exit
 fi
@@ -1181,23 +1164,17 @@ service squid restart -q > /dev/null 2>&1
 fi
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━━╮  
-           ┣ สถานะปัจจุบัน Proxy ใช้ใด้เฉพาะเซิฟร์นี้
-           ╰━━━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# สถานะปัจจุบัน Proxy ใช้ใด้เฉพาะเซิฟร์นี้ ############# "
 exit
 fi
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━╮  
-           ┣ สถานะเปลี่ยนเป็น Proxy ไม่จำกัด IP
-           ╰━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# สถานะเปลี่ยนเป็น Proxy ไม่จำกัด IP ############# "
 exit
  else
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━━╮  
-           ┣ สถานะปัจจุบัน Proxy ใช้ใด้เฉพาะเซิฟร์นี้
-           ╰━━━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# สถานะปัจจุบัน Proxy ใช้ใด้เฉพาะเซิฟร์นี้ ############# "
 
 read -p "เปลี่ยนเป็น Proxy ไม่จำกัด IP หรือไม่ Y/n :" selet
 if [[ "$selet" = "Y" || "$selet" = "y" ]]; then
@@ -1212,38 +1189,30 @@ service squid restart -q > /dev/null 2>&1
 fi
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━━╮  
-           ┣ =สถานะเปลี่ยนเป็น Proxy ใช้ใด้หลาย IP
-           ╰━━━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# สถานะเปลี่ยนเป็น Proxy ใช้ใด้หลาย IP ############# "
 exit
 fi
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━━╮  
-           ┣ สถานะปัจจุบัน Proxy ใช้ใด้เฉพาะเซิฟร์นี้
-           ╰━━━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# สถานะปัจจุบัน Proxy ใช้ใด้เฉพาะเซิฟร์นี้ ############# "
 exit
 fi
 elif [[ "2" = "$zenonnew" ]]; then
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━╮  
-           ┣ เลือกใช้คำสั่ง
-           ╰━┳━━━━━━━━━━━━━━━━━╯
-              ┣ 1. เพิ่มไอพี
-              ┣ 2. เช็ดไอพี
-              ┣ 3. ลบไอพี "
- read -p "    ╰━━ พิมพ์ตัวเลข : " Selet
+echo  " ############# เลือกใช้คำสั่ง #############
+              ## 1. เพิ่มไอพี
+              ## 2. เช็ดไอพี
+              ## 3. ลบไอพี "
+ read -p "    ## พิมพ์ตัวเลข : " Selet
  if [[ "$Selet" = "" ]]; then
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━╮  
-           ┣ สโปรดพิมพ์คำสั่ง
-           ╰━━━━━━━━━━━━━━━╯"
+echo  " ############# โปรดพิมพ์คำสั่ง ############# "
  exit
 fi
  if [[ $Selet = 1 ]]; then
- read -p " ┣ ใส่เลขไอพีที่จะใช้งานพร็อกซี่นี้ : " SERVER_IP
+ read -p " ## ใส่เลขไอพีที่จะใช้งานพร็อกซี่นี้ : " SERVER_IP
  if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
 grep -E "^acl SSH dst $SERVER_IP" /etc/squid3/squid.conf >/dev/null
 elif [[ "$VERSION_ID" = 'VERSION_ID="16.04"' || "$VERSION_ID" = 'VERSION_ID="9"' ]]; then
@@ -1252,9 +1221,7 @@ fi
 if [ $? -eq 0 ]; then
 clear
 clear
-echo   "    ╭━━━━━━━━━━━━━━━━━━━━╮  
-           ┣ IP $SERVER_IP มีอยู่ในระบบแล้ว
-           ╰━━━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# IP $SERVER_IP มีอยู่ในระบบแล้ว ############# "
 exit
 else
 read -p "บันทึกการตั้งค่านี้หรือไม่ y/n : " YN
@@ -1262,9 +1229,7 @@ fi
  if [[ n = $YN || N = $YN ]]; then
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━━╮  
-           ┣ $SERVER_IP ไม่ได้ยืนยันการใช้งาน
-           ╰━━━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# $SERVER_IP ไม่ได้ยืนยันการใช้งาน ############# "
 exit 
  fi
 
@@ -1285,9 +1250,8 @@ service squid restart -q > /dev/null 2>&1
 fi
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━━╮  
-           ┣ $SERVER_IP ใช้งานพร็อกซี่เซิฟร์นี้เรียบร้อย
-           ╰━━━━━━━━━━━━━━━━━━━━╯"
+
+echo  " ############# $SERVER_IP ใช้งานพร็อกซี่เซิฟร์นี้เรียบร้อย ############# "
 exit 
 elif [[ $Selet = 2 ]]; then
 if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
@@ -1298,36 +1262,30 @@ fi
  if [ $? -eq 0 ]; then
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━━╮  
-           ┣ สถานะปัจจุบัน Proxy ไม่จำกัด IP
-           ╰━━━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# สถานะปัจจุบัน Proxy ไม่จำกัด IP ############# "
 exit
 else
 
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━━╮  
-           ┣ ไอพีที่เปิดใช้งานอยู่ปัจจุบัน
-           ╰━━━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# ไอพีที่เปิดใช้งานอยู่ปัจจุบัน ############# "
 echo " $IP  "
 if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
 cat /etc/squid3/squid.txt
-echo "╰━━━━━━━━━━━━━━━━━━━╯"
+echo "########################"
 elif [[ "$VERSION_ID" = 'VERSION_ID="16.04"' || "$VERSION_ID" = 'VERSION_ID="9"' ]]; then
 cat /etc/squid/squid.txt
-echo "╰━━━━━━━━━━━━━━━━━━━╯"
+echo "########################"
 fi
 exit
 fi
 elif [[ $Selet = 3 ]]; then
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━╮  
-           ┣ ลบไอพีพร็อกซี่
-           ╰━┳━━━━━━━━━━━━━━━━━╯"
-echo "        ┣ 1. ลบบางไอพี  "
-echo "        ┣ 2. รีเซ็ตค่าเดิม  "
-read -p "     ╰━━ พิมพ์ตัวเลข : " Selet1
+echo  " ############# ลบไอพีพร็อกซี่ ############# "
+echo "        ## 1. ลบบางไอพี  "
+echo "        ## 2. รีเซ็ตค่าเดิม  "
+read -p "     ## พิมพ์ตัวเลข : " Selet1
 if [[ $Selet1 = 1 ]]; then
 read -p " ┣ ใส่เลขไอพีที่จะลบ : " SERVER_IP
 if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
@@ -1339,27 +1297,23 @@ fi
 if [ $? -eq 0 ]; then
 if [[ $SERVER_IP = $IP ]]; then
 clear
-clearo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣ ไม่อณุญาตให้ลบไอพีของเซิฟร์นี้
-           ╰━━━┳━━━━━━━━━━━━━╯"
+clear
+echo  " ############# ไม่อณุญาตให้ลบไอพีของเซิฟร์นี้ ############# "
+
  exit
 fi
- read -p "       ╰━━ แน่ใจว่าต้องการลบไอพี Y/n : " YN
+ read -p "       ## แน่ใจว่าต้องการลบไอพี Y/n : " YN
 else
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣ ไม่พบ IP $SERVER_IP ในระบบ
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# ไม่พบ IP $SERVER_IP ในระบบ ############# "
 exit
 fi
 
 if [[ $YN = N || $YN = n ]]; then
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣ ยกเลิกการเปลียนแปลง
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# ยกเลิกการเปลียนแปลง ############# "
  exit
 fi
 
@@ -1383,18 +1337,14 @@ service squid restart -q > /dev/null 2>&1
 fi
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣ ลบไอพี $SERVER_IP เรียบร้อย
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# ยกเลิกการเปลียนแปลง ############# "
 exit
 elif [[ $Selet1 = 2 ]]; then
-read -p " ╰━━ แน่ใจว่าต้องการลบไอพีทั้งหมด Y/n : " YN
+read -p " ## แน่ใจว่าต้องการลบไอพีทั้งหมด Y/n : " YN
 if [[ $YN = N || $YN = n ]]; then
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣ ยกเลิกการเปลียนแปลง
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# ยกเลิกการเปลียนแปลง ############# "
  exit
 fi
 if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
@@ -1423,28 +1373,22 @@ service squid restart -q > /dev/null 2>&1
 fi
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣ ลบไอพีทั้งหมด เรียบร้อย
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# ลบไอพีทั้งหมด เรียบร้อย ############# "
 exit
 fi
 fi
 elif [[ "3" = "$truepay" ]]; then
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━╮  
-           ┣ เลือกใช้คำสั่ง
-           ╰━┳━━━━━━━━━━━━━━━━━╯
-              ┣ 1. เพิ่มพอร์ต
-              ┣ 2. เช็ดพอร์ต
-              ┣ 3. ลบพอร์ต "
- read -p "    ╰━━ พิมพ์ตัวเลข : " Selet
+echo  " ############# เลือกใช้คำสั่ง ############# 
+             ## 1. เพิ่มพอร์ต
+             ## 2. เช็ดพอร์ต
+             ## 3. ลบพอร์ต "
+ read -p "    ## พิมพ์ตัวเลข : " Selet
  if [[ "$Selet" = "" ]]; then
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣ โปรดพิมพ์คำสั่ง
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# โปรดพิมพ์คำสั่ง ############# "
  exit
 fi
  if [[ $Selet = 1 ]]; then
@@ -1458,27 +1402,21 @@ fi
 if [ $? -eq 0 ]; then
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣ Port $Port มีอยู่ในระบบแล้ว
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# Port $Port มีอยู่ในระบบแล้ว ############# "
 exit
 else
 if [[ $Port = 80 || $Port = 443 || $Port = 22 || $Port = 143 || $Port = 444 || $Port = 10000 || $Port = 4468 || $Port = 9000 || $Port = 1 || $Port = 2 || $Port = 3 || $Port = 4 || $Port = 5 || $Port = 6 || $Port = 7 || $Port = 8 || $Port = 9 || $Port = 0 || $Port = 21 || $Port = 70 || $Port = 210 || $Port = 1025 || $Port = 65535 || $Port = 280 || $Port = 488 || $Port = 591 || $Port = 777 || $Port = 255 || $Port = 10 || $Port = 172 || $Port = 127 || $Port = 192 || $Port = 32 || $Port = 12 || $Port = 16 || $Port = 1440 || $Port = 20 || $Port = 10080 || $Port = 4320 || $Port = 3128 || $Port = 5555 ]]; then
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣ Port $Port ไม่สามารถเปิดใช้งานได้
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# Port $Port ไม่สามารถเปิดใช้งานได้ ############# "
 exit
 fi
-read -p "  ╰━━ บันทึกการตั้งค่านี้หรือไม่ y/n : " YN
+read -p "  ## บันทึกการตั้งค่านี้หรือไม่ y/n : " YN
 fi
  if [[ n = $YN || N = $YN ]]; then
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣ $Port ไม่ได้ยืนยันการใช้งาน
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# $Port ไม่ได้ยืนยันการใช้งาน ############# "
 exit 
  fi
 
@@ -1499,37 +1437,31 @@ service squid restart -q > /dev/null 2>&1
 fi
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣ Port $Port พร้อมใช้งาน
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# Port $Port พร้อมใช้งาน ############# "
 exit 
 elif [[ $Selet = 2 ]]; then
 
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣ พอร์ตที่เปิดใช้งานอยู่ปัจจุบัน
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# พอร์ตที่เปิดใช้งานอยู่ปัจจุบัน ############# "
 if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
 cat /etc/squid3/port.txt
-echo " ╰━━━━━━━━━━━━━━━━━━━╯"
+echo " ############# "
 elif [[ "$VERSION_ID" = 'VERSION_ID="16.04"' || "$VERSION_ID" = 'VERSION_ID="9"' ]]; then
 cat /etc/squid/port.txt
-echo " ╰━━━━━━━━━━━━━━━━━━━╯"
+echo " ############# "
 exit
 fi
 
 elif [[ $Selet = 3 ]]; then
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━╮  
-           ┣ ลบพอร์ตพร็อกซี
-           ╰━┳━━━━━━━━━━━━━━━━━╯"
-echo "        ┣ 1. ลบบางพอร์ต  "
-echo "        ┣ 2. รีเซ็ตค่าเดิม  "
-read -p "     ╰━━ พิมพ์ตัวเลข : " Selet1
+echo  " ############# ลบพอร์ตพร็อกซี ############# "
+echo "        ## 1. ลบบางพอร์ต  "
+echo "        ## 2. รีเซ็ตค่าเดิม  "
+read -p "      ## พิมพ์ตัวเลข : " Selet1
 if [[ $Selet1 = 1 ]]; then
-read -p " ┣ ใส่เลขพอร์ตที่จะลบ : " Port
+read -p " ## ใส่เลขพอร์ตที่จะลบ : " Port
 if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
 grep -E "^http_port $Port" /etc/squid3/squid.conf >/dev/null
 elif [[ "$VERSION_ID" = 'VERSION_ID="16.04"' || "$VERSION_ID" = 'VERSION_ID="9"' ]]; then
@@ -1539,18 +1471,14 @@ if [ $? -eq 0 ]; then
 if [[ $Port = 8080 ]]; then
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣ ไม่อณุญาตให้ลบพอร์ต 8080
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# ไม่อณุญาตให้ลบพอร์ต 8080 ############# "
  exit
 fi
  read -p "แน่ใจว่าต้องการลบพอร์ต Y/n : " YN
 else
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣ ไม่พบ Port $Port ในระบบ
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# ไม่พบ Port $Port ในระบบ ############# "
 exit
 fi
 
@@ -1558,9 +1486,7 @@ fi
 if [[ $YN = N || $YN = n ]]; then
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣ ยกเลิกการเปลียนแปลง
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# ยกเลิกการเปลียนแปลง ############# "
  exit
 fi
 
@@ -1583,18 +1509,14 @@ service squid restart -q > /dev/null 2>&1
 fi
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣ ลบพอร์ต $Port เรียบร้อย
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# ลบพอร์ต $Port เรียบร้อย ############# "
 exit
 elif [[ $Selet1 = 2 ]]; then
-read -p " ┣ แน่ใจว่าต้องรีเซ็ตค่าเดิม Y/n : " YN
+read -p " ## แน่ใจว่าต้องรีเซ็ตค่าเดิม Y/n : " YN
 if [[ $YN = N || $YN = n ]]; then
 clear
 clear
-echo  "    ╭━━━━━━━━━━╮  
-           ┣  ยกเลิกการรีเซ็ต
-           ╰━━━━━━━━━━╯"
+echo  " ############# ยกเลิกการรีเซ็ต ############# "
  exit
 fi
 if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
@@ -1621,9 +1543,7 @@ service squid restart -q > /dev/null 2>&1
 fi
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣ รีเซ็ตพอร์ค่าเดิมเรียบร้อย
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# รีเซ็ตพอร์ค่าเดิมเรียบร้อย ############# "
 exit
 fi
 fi
@@ -1635,11 +1555,11 @@ exit
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
-echo "       ╭━━━━━━━━━━━━╮"
-echo "       ┣ 》1: TRUE         "
-echo "       ┣ 》2: DTAC           "
-echo "       ┣━━━━━━━━━━━━╯"
-read -p "    ┣ Namber : " zenonnew
+echo  " ############# รีเซ็ตพอร์ค่าเดิมเรียบร้อย ############# "
+echo "      ## 》1: TRUE ##        "
+echo "      ## 》2: DTAC ##        "
+echo "      ##"
+read -p "   ## Namber : " zenonnew
 
 if [[ "$zenonnew" = "1" ]]; then
 grep -E "^proto tcp" /etc/openvpn/1194.conf >/dev/null
@@ -1696,14 +1616,10 @@ fi
 
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣บันทึกเรียบร้อย
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# บันทึกเรียบร้อย ############# "
 exit
 elif [[ "$Edit" = "n" || "$Edit" = "N" ]]; then
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣  ยกเลิกการบันทึก
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# ยกเลิกการบันทึก ############# "
    exit
 fi
 
@@ -1762,20 +1678,14 @@ fi
 
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣  บันทึกเรียบร้อย
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# บันทึกเรียบร้อย ############# "
 exit
 elif [[ "$Edit" = "n" || "$Edit" = "N" ]]; then
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣  ยกเลิกการบันทึก
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# ยกเลิกการบันทึก ############# "
    exit
 fi
 if [[ "$zenonnew" = "" ]]; then
-echo  "    ╭━━━━━━━━━━━━━━━━━╮  
-           ┣  ไม่พบข้อมูล
-           ╰━━━━━━━━━━━━━━━━━╯"
+echo  " ############# ไม่พบข้อมูล ############# "
    exit
 fi
 exit
@@ -1788,10 +1698,8 @@ grep -E "^port 1194" /etc/openvpn/1194.conf >/dev/null
  if [ $? -eq 0 ]; then
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━━━╮  
-           ┣  สถานะปัจจุบัญ Openvpn ใช้งานพอต 1194
-           ╰━━━━━━━━━━━━━━━━━━━━━╯"
-read -p "  ╰ เปลียน Openvpn ใช้งานพอต 443 หรือไม่ Y/n :" selet
+echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานพอต 1194 ############# "
+read -p "  ## เปลียน Openvpn ใช้งานพอต 443 หรือไม่ Y/n :" selet
 if [[ "$selet" = "Y" || "$selet" = "y" ]]; then
 cp /etc/openvpn/1194.conf /home/1194ori.conf
 
@@ -1821,24 +1729,18 @@ service dropbear restart
 service squid3 restart
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━━━╮  
-           ┣  สถานะปัจจุบัญ Openvpn ใช้งานพอต 443
-           ╰━━━━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานพอต 443 ############# "
 exit
 fi
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━━━╮  
-           ┣  สถานะปัจจุบัญ Openvpn ใช้งานพอต 1194
-           ╰━━━━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานพอต 1194 ############# "
 exit
  else
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━━━╮  
-           ┣  สถานะปัจจุบัญ Openvpn ใช้งานพอต 443
-           ╰━━━━━━━━━━━━━━━━━━━━━╯"
-read -p "  ╰เปลียน Openvpn ใช้งานพอต 1194 หรือไม่ Y/n :" selet
+echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานพอต 443 ############# "
+read -p "  ## เปลียน Openvpn ใช้งานพอต 1194 หรือไม่ Y/n :" selet
 if [[ "$selet" = "Y" || "$selet" = "y" ]]; then
 sed -i 's/443/1194/g' /etc/openvpn/1194.conf
 sed -i 's/443/1194/g' /etc/openvpn/dtac.ovpn
@@ -1846,16 +1748,12 @@ sed -i 's/443/1194/g' /etc/openvpn/true.ovpn
 service openvpn restart -q > /dev/null 2>&1
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━━━╮  
-           ┣  สถานะปัจจุบัญ Openvpn ใช้งานพอต 1194
-           ╰━━━━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานพอต 1194 ############# "
 exit
 fi
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━━━╮  
-           ┣  สถานะปัจจุบัญ Openvpn ใช้งานพอต 443
-           ╰━━━━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานพอต 443 ############# "
 exit
 fi
 ;;
@@ -1866,10 +1764,8 @@ grep -E "^proto tcp" /etc/openvpn/1194.conf >/dev/null
  if [ $? -eq 0 ]; then
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━━━╮  
-           ┣  สถานะปัจจุบัญ Openvpn ใช้งานโปรโตคอล tcp
-           ╰━━━━━━━━━━━━━━━━━━━━━╯"
-read -p "  ╰ เปลียน Openvpn ใช้งานโปรโตคอล udp หรือไม่ Y/n :" selet
+echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานโปรโตคอล tcp ############# "
+read -p "  ## เปลียน Openvpn ใช้งานโปรโตคอล udp หรือไม่ Y/n :" selet
 if [[ "$selet" = "Y" || "$selet" = "y" ]]; then
 sed -i 's/tcp/udp/g' /etc/openvpn/1194.conf
 sed -i 's/tcp/udp/g' /etc/openvpn/true.ovpn /etc/openvpn/dtac.ovpn
@@ -1889,24 +1785,18 @@ echo " "
 service openvpn restart -q > /dev/null 2>&1
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━━━╮  
-           ┣ สถานะปัจจุบัญ Openvpn ใช้งานโปรโตคอล udp
-           ╰━━━━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานโปรโตคอล udp ############# "
 exit
 fi
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━━━╮  
-           ┣ สถานะปัจจุบัญ Openvpn ใช้งานโปรโตคอล tcp
-           ╰━━━━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานโปรโตคอล tcp ############# "
 exit
  else
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━━━╮  
-           ┣ สถานะปัจจุบัญ Openvpn ใช้งานโปรโตคอล udp
-           ╰━━━━━━━━━━━━━━━━━━━━━╯"
-read -p "  ╰ เปลียน Openvpn ใช้งานโปรโตคอล tcp หรือไม่ Y/n :" selet
+echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานโปรโตคอล udp ############# "
+read -p "  ## เปลียน Openvpn ใช้งานโปรโตคอล tcp หรือไม่ Y/n :" selet
 if [[ "$selet" = "Y" || "$selet" = "y" ]]; then
 sed -i 's/udp/tcp/g' /etc/openvpn/1194.conf
 sed -i 's/udp/tcp/g' /etc/openvpn/true.ovpn /etc/openvpn/dtac.ovpn
@@ -1920,16 +1810,12 @@ echo " "
 service openvpn restart -q > /dev/null 2>&1
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━━━╮  
-           ┣ สถานะปัจจุบัญ Openvpn ใช้งานโปรโตคอล tcp
-           ╰━━━━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานโปรโตคอล tcp ############# "
 exit
 fi
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━━━━━━╮  
-           ┣ สถานะปัจจุบัญ Openvpn ใช้งานโปรโตคอล udp
-           ╰━━━━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานโปรโตคอล udp ############# "
 exit
 fi
 ;;
@@ -1938,19 +1824,14 @@ fi
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
-echo  "    ╭━━━━━━━━━━╮  
-           ┣  เลือกซิมที่จะใช้ไฟล์นี้ 
-           ╰━━━━━━━━━━╯
-           ┣ 1. True
-           ┣ 2. Dtac
-  "
+echo  " ############# เลือกซิมที่จะใช้ไฟล์นี้ #############
+           ## 1. True
+           ## 2. Dtac "
 	read -p " EnterNamber : " truepay
 	if [[ "$truepay" = "" ]]; then
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━╮ 
-                  ┣ พิมพ์คำสั่งไม่ถูกต้อง
-                  ╰━━━━━━━━━━╯${z7}"
+echo -e "${z1} ############# พิมพ์คำสั่งไม่ถูกต้อง ############# ${z7}"
 echo -e ""
 exit
 	elif [[ "$truepay" = "1" ]]; then
@@ -1984,16 +1865,12 @@ exit
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
-echo "    ╭━━━━━━━━━━━━━━━━━━━━━━━━━━━╮"
-echo "    ┣ สำรองชื่อผู้ใช้ และ คืนค่าชื่อผู้ใช้ "
-echo "    ╰━━━━━━━┳━━━━━━━━━━━┳━━━━━━━╯"
-echo "    ╭━━━━━━━┻━━━━━━━━━━━┻━━━━━━━╮"
-echo "    ┃ ใส่ตัวเลขแล้วกด enter"
-echo "    ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━╯"
-echo "    ┣ 1. Backup "
-echo "    ┣ 2. Restore  "
-echo "    ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━╯"
-read -p " ┣ เลือก : " opcao
+echo  " ############# สำรองชื่อผู้ใช้ และ คืนค่าชื่อผู้ใช้ ############# "
+echo  " ############# ใส่ตัวเลขแล้วกด ente ############# "
+echo  " ## 1. Backup "
+echo  " ##2. Restore "
+echo "  ####################################################"
+read -p " ## เลือก : " opcao
 if [[ $opcao = "1" || $opcao = "2" || $opcao = "3" || $opcao = "4" || $opcao = "5" || $opcao = "6" || $opcao = "7" || $opcao = "8" ]]; then
 
 case $opcao in
@@ -2001,9 +1878,7 @@ case $opcao in
 tar cf /home/vps/public_html/user.tar /etc/passwd /etc/shadow /etc/gshadow /etc/group
 clear
 clear
-echo "    ╭━━━━━━━━━━━━━━━━━━╮"
-echo "    ┣ แบ็คอับเสร็จเรียบร้อย "
-echo "    ╰━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# แบ็คอับเสร็จเรียบร้อย ############# "
 exit
 ;;
 2 | 02 )
@@ -2018,24 +1893,18 @@ rm user.tar
 echo news:4468 | chpasswd
 clear
 clear
-echo "    ╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮"
-echo "    ┣ คืนค่าผู้ใช้ของไอพี $dns2 เสร็จเรียบร้อย "
-echo "    ╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# คืนค่าผู้ใช้ของไอพี $dns2 เสร็จเรียบร้อย ############# "
 exit
 else
 clear
 clear
-echo "    ╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮"
-echo "    ┣ ไม่พบไฟล์คืนค่าผู้ใช้ของไพี $dns2 "
-echo "    ╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# ไม่พบไฟล์คืนค่าผู้ใช้ของไพี $dns2 ############# "
 exit
 fi
 else
 clear
 clear
-echo "    ╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮"
-echo "    ┣ ยกเลิกคืนค่าผู้ใช้ของไอพี $dns2 "
-echo "    ╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯"
+echo  " ############# ยกเลิกคืนค่าผู้ใช้ของไอพี $dns2 ############# "
 exit
 fi
 ;;
@@ -2043,9 +1912,7 @@ esac
 else
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣ พิมพ์คำสั่งไม่ถูกต้อง
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "${z1} ############# พิมพ์คำสั่งไม่ถูกต้อง ############# ${z7}"
 echo -e ""
 exit
 fi
@@ -2543,9 +2410,9 @@ case $opcao in
 service dropbear restart
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣    รีสตาร์ dropbear สำเร็จ
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "        ╭━━━━━━━━━━━━━━━━━━━━━━╮ "
+echo -e "        ┣    รีสตาร์ dropbear สำเร็จ "
+echo -e "        ╰━━━━━━━━━━━━━━━━━━━━━━╯ "
 echo -e ""
 exit
 ;;
@@ -2553,9 +2420,9 @@ exit
 service nginx restart
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣    รีสตาร์ nginx สำเร็จ
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "        ╭━━━━━━━━━━━━━━━━━━━━━━╮ " 
+echo -e "        ┣    รีสตาร์ nginx สำเร็จ "
+echo -e "        ╰━━━━━━━━━━━━━━━━━━━━━━╯ "
 echo -e ""
 exit
 ;;
@@ -2563,18 +2430,19 @@ exit
 service php5 restart
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣    รีสตาร์ php5 สำเร็จ
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "        ╭━━━━━━━━━━━━━━━━━━━━━━╮ " 
+echo -e "        ┣    รีสตาร์ php5 สำเร็จ "
+echo -e "        ╰━━━━━━━━━━━━━━━━━━━━━━╯ "
+echo -e ""
 exit
 ;;
 4)
 service webmin restart
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣    รีสตาร์ webmin สำเร็จ
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "        ╭━━━━━━━━━━━━━━━━━━━━━━╮ " 
+echo -e "        ┣    รีสตาร์ webmin สำเร็จ "
+echo -e "        ╰━━━━━━━━━━━━━━━━━━━━━━╯ "
 echo -e ""
 exit
 ;;
@@ -2582,9 +2450,9 @@ exit
 service squid3 restart
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣    รีสตาร์ squid3 สำเร็จ
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "       ╭━━━━━━━━━━━━━━━━━━━━━━╮ "
+echo -e "       ┣    รีสตาร์ squid3 สำเร็จ "
+echo -e "       ╰━━━━━━━━━━━━━━━━━━━━━━╯"
 echo -e ""
 exit
 ;;
@@ -2592,9 +2460,9 @@ exit
 service openvpn restart
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣    รีสตาร์ openvpn สำเร็จ
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "       ╭━━━━━━━━━━━━━━━━━━━━━━╮" 
+echo -e "       ┣    รีสตาร์ openvpn สำเร็จ "
+echo -e "       ╰━━━━━━━━━━━━━━━━━━━━━━╯"
 echo -e ""
 exit
 ;;
@@ -2602,9 +2470,9 @@ exit
 service ssh restart
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣    รีสตาร์ ssh สำเร็จ
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "         ╭━━━━━━━━━━━━━━━━━━━━━━╮"
+echo -e "         ┣    รีสตาร์ ssh สำเร็จ "
+echo -e "         ╰━━━━━━━━━━━━━━━━━━━━━━╯"
 echo -e ""
 exit
 ;;
@@ -2612,9 +2480,9 @@ esac
 
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣    พิมพ์คำสั่งไม่ถูกต้อง
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "         ╭━━━━━━━━━━━━━━━━━━━━━━╮ " 
+echo -e "         ┣    พิมพ์คำสั่งไม่ถูกต้อง "
+echo -e "         ╰━━━━━━━━━━━━━━━━━━━━━━╯ "
 echo -e ""
 
 elif [[ "$VERSION_ID" = 'VERSION_ID="9"' || "$VERSION_ID" = 'VERSION_ID="16.04"' ]]; then
@@ -2643,9 +2511,9 @@ case $opcao in
 service dropbear restart
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣   รีสตาร์ dropbear สำเร็จ
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "        ╭━━━━━━━━━━━━━━━━━━━━━━╮ "
+echo -e "        ┣    รีสตาร์ dropbear สำเร็จ "
+echo -e "        ╰━━━━━━━━━━━━━━━━━━━━━━╯ "
 echo -e ""
 exit
 ;;
@@ -2653,19 +2521,19 @@ exit
 service nginx restart
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣   รีสตาร์ nginx สำเร็จ
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "        ╭━━━━━━━━━━━━━━━━━━━━━━╮ " 
+echo -e "        ┣    รีสตาร์ nginx สำเร็จ "
+echo -e "        ╰━━━━━━━━━━━━━━━━━━━━━━╯ "
 echo -e ""
 exit
 ;;
 3)
-service php7.0 restart
+service php5 restart
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣   รีสตาร์ php7.0 สำเร็จ
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "        ╭━━━━━━━━━━━━━━━━━━━━━━╮ " 
+echo -e "        ┣    รีสตาร์ php5 สำเร็จ "
+echo -e "        ╰━━━━━━━━━━━━━━━━━━━━━━╯ "
 echo -e ""
 exit
 ;;
@@ -2673,9 +2541,9 @@ exit
 service webmin restart
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣   รีสตาร์ webmin สำเร็จ
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "        ╭━━━━━━━━━━━━━━━━━━━━━━╮ " 
+echo -e "        ┣    รีสตาร์ webmin สำเร็จ "
+echo -e "        ╰━━━━━━━━━━━━━━━━━━━━━━╯ "
 echo -e ""
 exit
 ;;
@@ -2683,9 +2551,9 @@ exit
 service squid3 restart
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣   รีสตาร์ squid3 สำเร็จ
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "       ╭━━━━━━━━━━━━━━━━━━━━━━╮ "
+echo -e "       ┣    รีสตาร์ squid3 สำเร็จ "
+echo -e "       ╰━━━━━━━━━━━━━━━━━━━━━━╯"
 echo -e ""
 exit
 ;;
@@ -2693,9 +2561,9 @@ exit
 service openvpn restart
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣  รีสตาร์ openvpn สำเร็จ
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "       ╭━━━━━━━━━━━━━━━━━━━━━━╮" 
+echo -e "       ┣    รีสตาร์ openvpn สำเร็จ "
+echo -e "       ╰━━━━━━━━━━━━━━━━━━━━━━╯"
 echo -e ""
 exit
 ;;
@@ -2703,9 +2571,9 @@ exit
 service ssh restart
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣  รีสตาร์ ssh สำเร็จ
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "         ╭━━━━━━━━━━━━━━━━━━━━━━╮"
+echo -e "         ┣    รีสตาร์ ssh สำเร็จ "
+echo -e "         ╰━━━━━━━━━━━━━━━━━━━━━━╯"
 echo -e ""
 exit
 ;;
@@ -2713,9 +2581,9 @@ esac
 
 clear
 clear
-echo -e "${z1}    ╭━━━━━━━━━━━━━━━━━━━━━━╮ 
-                  ┣  พิมพ์คำสั่งไม่ถูกต้อง
-                  ╰━━━━━━━━━━━━━━━━━━━━━━╯${z7}"
+echo -e "         ╭━━━━━━━━━━━━━━━━━━━━━━╮ " 
+echo -e "         ┣    พิมพ์คำสั่งไม่ถูกต้อง "
+echo -e "         ╰━━━━━━━━━━━━━━━━━━━━━━╯ "
 echo -e ""
 fi
 exit
@@ -2752,7 +2620,7 @@ echo ""
 echo ""
 echo -e "\e[32m    ##############################################################    "
 echo -e "\e[32m    #                                                            #    "
-echo -e "\e[32m    #    >>>>> [ ระบบสคริป  : PRATYASART THEEJANMART ] <<<<<          #    "
+echo -e "\e[32m    #    >>>>> [ ระบบสคริป  : PRATYASART THEEJANMART ] <<<<<      #    "
 echo -e "\e[32m    #                                                            #    "
 echo -e "\e[32m    #                SYSTEM MANAGER VPN SSH                      #    "
 echo -e "\e[32m    #                                                            #    "
@@ -2760,14 +2628,8 @@ echo -e "\e[32m    #    Dropbear       :   22, 443                              
 echo -e "\e[32m    #    SSL            :   444                                  #    "
 echo -e "\e[32m    #    Squid3         :   3128, 8080                           #    "
 echo -e "\e[32m    #    OpenVPN        :   TCP 1194                             #    "
-echo -e "\e[32m    #    Nginx          :   80                                   #    "
+echo -e "\e[32m    #    Nginx          :   85                                   #    "
 echo -e "\e[32m    #                                                            #    "
-echo -e "\e[32m    #                 TOOLS VPN SSH                              #    "
-echo -e "\e[32m    #                                                            #    "
-echo -e "\e[32m    #    Useronline     :   http://$IP/online                    #    "
-echo -e "\e[32m    #    Vnstat         :   http://$IP/bandwidth                 #    "
-echo -e "\e[32m    #    Webmin         :   http://$IP:10000                     #    "
-echo -e "\e[32m    #    ConfigVPN      :   http://$IP/zenon.ovpn                #    "
 echo -e "\e[32m    #                                                            #    "
 echo -e "\e[32m    #             LIMIT SETTINGS VPN SSH                         #    "
 echo -e "\e[32m    #                                                            #    "
