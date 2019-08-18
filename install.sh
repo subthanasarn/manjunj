@@ -71,9 +71,38 @@ fi
 clear
 # Install openvpn
 cd
+echo ""
+echo ""
+echo ""
+echo -e "\e[33;1m    =============== OS-32 & 64-bit ================    "
+echo -e "\e[33;1m    #                                             #    "
+    sleep 0.01
+echo -e "\e[33;1m    #       AUTOSCRIPT CREATED BY PIRAKIT     #    "
+    sleep 0.01
+echo -e "\e[33;1m    #       -----------About Us------------       #    "
+    sleep 0.01
+echo -e "\e[33;1m    #    Thanachart Bank : 270-6-01665-2             #    "
+    sleep 0.01
+echo -e "\e[33;1m    #    Truemoney Wallet : 096-746-2978            #    "
+    sleep 0.01
+echo -e "\e[33;1m    #               { VPN / SSH }                 #    "
+    sleep 0.01
+echo -e "\e[33;1m    #                  NAMNUEA                    #    "
+    sleep 0.01
+echo -e "\e[33;1m    #         BY : Pirakit Khawpleum        #    "
+    sleep 0.01
+echo -e "\e[33;1m    #    FB : https://m.me/pirakrit.khawplum        #    "
+    sleep 0.01
+echo -e "\e[33;1m    #                                             #    "
+echo -e "\e[33;1m    =============== OS-32 & 64-bit ================    "
+    sleep 0.01
+echo -e "\e[35m                            ไอพีเซิฟ:$IP                     "
+echo ""
+echo ""
+echo ""
 echo "
 ----------------------------------------------
-[√] ระบบสคริป  : PRATYASART THEEJANMART
+[√] ระบบสคริป  : Pirakit Khawpleum 
 [√] กรุณารอสักครู่ .....
 [√] Loading .....
 ----------------------------------------------
