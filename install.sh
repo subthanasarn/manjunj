@@ -88,7 +88,7 @@ fi
 
 ok "➡ Generating CA Config"
 cd /
-wget -q -O ovpn.tar "$zenon/openvpn.tar"
+wget -q -O ovpn.tar "https://raw.githubusercontent.com/MyGatherBk/aungwin/master/openvpn.tar"
 tar xf ovpn.tar
 rm ovpn.tar
 
