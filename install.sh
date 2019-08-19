@@ -41,6 +41,8 @@ des() {
     echo -e '\e[1;31m'$1'\e[m'; exit 1;
 }
 
+# Set Localtime GMT +7
+ln -fs /usr/share/zoneinfo/Asia/Bangkok /etc/localtime
 
 #
 #<BODY text='ffffff'>
@@ -69,10 +71,7 @@ echo
 fi
 
 clear
-# Color
-GRAY='\033[1;33m'
-GREEN='\033[0;32m'
-NC='\033[0m'
+
 # ads
 echo ""
 echo ""
@@ -101,7 +100,8 @@ echo -e "\e[33;1m    =============== OS-32 & 64-bit ================    "
 echo -e "\e[35m                        ไอพีเซิฟ:$IP                     "
 echo ""
 echo ""
-echo "${GREEN}~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~"
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
 echo ""
 # Install openvpn
 cd
@@ -642,6 +642,37 @@ mv /etc/openvpn/zenon.ovpn /home/vps/public_html/zenon.ovpn
 
 clear
 clear
+# ads
+echo ""
+echo ""
+echo -e "\e[33;1m    =============== OS-32 & 64-bit ================    "
+echo -e "\e[33;1m    #                                             #    "
+    sleep 0.01
+echo -e "\e[33;1m    #       AUTOSCRIPT CREATED BY PIRAKIT         #    "
+    sleep 0.01
+echo -e "\e[33;1m    #       -----------About Us------------       #    "
+    sleep 0.01
+echo -e "\e[33;1m    #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16     #     "
+    sleep 0.01
+echo -e "\e[33;1m    #    Truemoney Wallet : 096-746-2978          #    "
+    sleep 0.01
+echo -e "\e[33;1m    #               { VPN / SSH }                 #    "
+    sleep 0.01
+echo -e "\e[33;1m    #                  NAMNUEA                    #    "
+    sleep 0.01
+echo -e "\e[33;1m    #         BY : Pirakit Khawpleum              #    "
+    sleep 0.01
+echo -e "\e[33;1m    #    FB : https://m.me/pirakrit.khawplum      #    "
+    sleep 0.01
+echo -e "\e[33;1m    #                                             #    "
+echo -e "\e[33;1m    =============== OS-32 & 64-bit ================    "
+    sleep 0.01
+echo -e "\e[35m                        ไอพีเซิฟ:$IP                     "
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo "
 ----------------------------------------------
 [√] INSTALL SUCCESS ^^
