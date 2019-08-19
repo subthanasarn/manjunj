@@ -960,11 +960,6 @@ echo -e "\033[01;35m
 echo -e "\e[0m"
 exit
 ;;
-echo ""
-echo ""
-echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
-sleep 0.01
-echo ""
  n | N )
 echo -e "\033[1;31m"
 echo " ลบผู้ใช้เรียบร้อย"
