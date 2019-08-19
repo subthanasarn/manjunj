@@ -63,6 +63,12 @@ echo
 exit
 fi
 else
+clear
+cd
+echo
+fi
+
+clear
 # Color
 GRAY='\033[1;33m'
 GREEN='\033[0;32m'
@@ -98,11 +104,14 @@ echo ""
 echo "${GREEN}~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~"
 echo ""
 # Install openvpn
+cd
+echo "
 ----------------------------------------------
 [√] ระบบสคริป  : Pirakit Khawpleum 
 [√] กรุณารอสักครู่ .....
 [√] Loading .....
 ----------------------------------------------
+ "
 ok "➡ apt-get update"
 apt-get update -q > /dev/null 2>&1
 ok "➡ apt-get install openvpn curl openssl"
@@ -650,7 +659,7 @@ echo -e "\e[32m    #                                                            
 echo -e "\e[32m    #    Dropbear       :   22, 443                              #    "
 echo -e "\e[32m    #    SSL            :   444                                  #    "
 echo -e "\e[32m    #    Squid3         :   3128, 8080                           #    "
-echo -e "\e[32m    #    OpenVPN        :   TCP 1194 [Edit] TCP 443                    #    "
+echo -e "\e[32m    #    OpenVPN        :   TCP 1194 [Edit] TCP 443              #    "
 echo -e "\e[32m    #    Nginx          :   85                                   #    "
 echo -e "\e[32m    #                                                            #    "
 echo -e "\e[32m    #             LIMIT SETTINGS VPN SSH                         #    "
