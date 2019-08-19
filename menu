@@ -1,33 +1,5 @@
 #!/bin/bash
-echo ""
-echo ""
-echo ""
-echo -e "\e[33;1m    =============== OS-32 & 64-bit ================    "
-echo -e "\e[33;1m    #                                             #    "
-    sleep 0.01
-echo -e "\e[33;1m    #       AUTOSCRIPT CREATED BY PIRAKIT     #    "
-    sleep 0.01
-echo -e "\e[33;1m    #       -----------About Us------------       #    "
-    sleep 0.01
-echo -e "\e[33;1m    #    Thanachart Bank : 270-6-01665-2             #    "
-    sleep 0.01
-echo -e "\e[33;1m    #    Truemoney Wallet : 096-746-2978            #    "
-    sleep 0.01
-echo -e "\e[33;1m    #               { VPN / SSH }                 #    "
-    sleep 0.01
-echo -e "\e[33;1m    #                  NAMNUEA                    #    "
-    sleep 0.01
-echo -e "\e[33;1m    #         BY : Pirakit Khawpleum        #    "
-    sleep 0.01
-echo -e "\e[33;1m    #    FB : https://m.me/pirakrit.khawplum        #    "
-    sleep 0.01
-echo -e "\e[33;1m    #                                             #    "
-echo -e "\e[33;1m    =============== OS-32 & 64-bit ================    "
-    sleep 0.01
-echo -e "\e[35m                            ไอพีเซิฟ:$IP                     "
-echo ""
-echo ""
-echo ""
+
 #IP
 zenon="https://raw.githubusercontent.com/MyGatherBk/aungwin/master"
 rm -f menu
@@ -72,6 +44,38 @@ fi
 
 clear
 clear 
+# ads
+echo ""
+echo ""
+echo -e "\e[33;1m    =============== OS-32 & 64-bit ================    "
+echo -e "\e[33;1m    #                                             #    "
+    sleep 0.01
+echo -e "\e[33;1m    #       AUTOSCRIPT CREATED BY PIRAKIT         #    "
+    sleep 0.01
+echo -e "\e[33;1m    #       -----------About Us------------       #    "
+    sleep 0.01
+echo -e "\e[33;1m    #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16     #     "
+    sleep 0.01
+echo -e "\e[33;1m    #    Truemoney Wallet : 096-746-2978          #    "
+    sleep 0.01
+echo -e "\e[33;1m    #               { VPN / SSH }                 #    "
+    sleep 0.01
+echo -e "\e[33;1m    #                  NAMNUEA                    #    "
+    sleep 0.01
+echo -e "\e[33;1m    #         BY : Pirakit Khawpleum              #    "
+    sleep 0.01
+echo -e "\e[33;1m    #    FB : https://m.me/pirakrit.khawplum      #    "
+    sleep 0.01
+echo -e "\e[33;1m    #                                             #    "
+echo -e "\e[33;1m    =============== OS-32 & 64-bit ================    "
+    sleep 0.01
+echo -e "\e[35m                        ไอพีเซิฟ:$IP                     "
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
+echo "
 echo -e ""
 	echo -e "\033[1;31m-------------------------------------------------------" 
 	echo -e "\033[1;32m>>>>>    [ ระบบสคริป  : Pirakit Khawpleum ]    <<<<<   " 
@@ -193,16 +197,13 @@ echo -e "\033[1;32m { 32 } ลิ้งต่างๆ "
 	echo -e "\033[1;36m-------------------------------------------------------" 
 
 sleep 0.01
-echo -e "\033[1;33m { 33 } ติดตั้ง Databest  "
+echo -e "\033[1;33m { 33 } ติดตั้ง Databest  DE 9 UBUN 14.04 "
 
 sleep 0.01
 echo -e "\033[1;33m { 34 } ติดตั้ง WEBMIN  "
 
 sleep 0.01
 echo -e "\033[1;33m { 35 } เปลี่ยนพอต เป็น 443  "
-
-sleep 0.01
-echo -e "\033[1;34m { 00 } อัปเดตฟังชั่น Scrip  "
 
 	echo -e "\033[1;31m-------------------------------------------------------" 
 
@@ -216,36 +217,49 @@ case $MENU in
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━╮  
-           ┣ เพิ่มผู้ใช้ Openvpn
-           ╰━━━━━━━━━━━━━━━━╯"
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
+echo  "    ╭━━━━━━━━━━━━━━━━╮ " 
+echo  "    ┣ เพิ่มผู้ใช้ Openvpn   "
+echo  "    ╰━━━━━━━━━━━━━━━━╯"
 read -p "  ┣ UserName : " username
 egrep "^$username" /etc/passwd >/dev/null
 if [ $? -eq 0 ]; then
 clear
 clear
-echo  "    ╭━━━━━━━━━━━━━━━━╮  
-           ┣ ชื่่่อผู้ใช้  $username มีอยู่แล้ว
-           ╰━━━━━━━━━━━━━━━━╯"
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
+echo  "    ╭━━━━━━━━━━━━━━━━╮"  
+echo  "    ┣ ชื่่่อผู้ใช้  $username มีอยู่แล้ว "
+echo  "    ╰━━━━━━━━━━━━━━━━╯"
 exit 1
 else
 	read -p " ┣ PassWord : " password
 	read -p " ┣ Expire   : " AKTIF
 clear
 clear
-echo  " ############# เลือกซิมที่จะใช้ไฟล์นี้ #############
-           ## 1. Trueid
-           ## 2. Dtacไวเบอร์
-           ## 3. Dtacโซเชี่ยว 
-           ## 4. True face+line (*935*99#)
-           ## 5. Trueปลูกปัญญา
-           ## 6. AIS64kbps 
-           ## 7. AISplay
-           ## 8. client "
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
+echo  " ############# เลือกไฟล์นี้ #############
+           ## 1. Client "
 	read -p " ## " zenonnew
 	if [[ "$zenonnew" = "" ]]; then
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo -e "${z1} ############# พิมพ์คำสั่งไม่ถูกต้อง ############# ${z7}"
 echo -e ""
 	exit
@@ -271,16 +285,25 @@ fi
 	useradd -M -N -s /bin/false -e $expire $username
 	echo $username:$password | chpasswd
 clear
-clear        
+clear   
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
+echo ""
+echo -e "\033[1;31m Truemoney Wallet : 096-746-2978  "
+sleep 0.01
+echo ""
   echo " ############# Open VPN พร้อมใช้งาน ############# 
          ## ไอพี     : $IP          
          ## ชื่อผู้ใช้   : $username         
          ## รหัสผ่าน  : $password           
          ## หมดอายุ  : $Today      
-        ###############################################   
-        ## ดาวน์โหลดไฟล์ Openvpn ## 
-        ## http://$IP:85/file/$username.ovpn ## 
-        ############################################### "
+        ------------------------------------------------- 
+        -- ดาวน์โหลดไฟล์ Openvpn--
+        -- http://$IP:85/file/$username.ovpn --
+        ------------------------------------------------- "
 		echo ""
  
 cat > /home/vps/public_html/file/$username.ovpn <<-END
@@ -309,19 +332,17 @@ exit
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
-  cr
-  echo
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
+echo -e "\033[1;31m Truemoney Wallet : 096-746-2978  "
+sleep 0.01
+echo ""
   echo "
  เลือกโปรที่จะใช้ไฟล์นี้ 
- 1. Trueid
- 2. Dtacviber
- 3. Dtacโซเชี่ยว 
- 4. True  face+line (*935*99#)
- 5. Trueปลูกปัญญา
- 6. AIS64kbps
- 7. AISplay
- 8. client
-  "
+ 1. client "
 	read -p " EnterNamber : " zenonnew
 	if [[ "$zenonnew" = "" ]]; then
 clear
@@ -355,15 +376,20 @@ useradd -e `date -d "$Day days" +"%Y-%m-%d"` -s /bin/false -M $Login
 echo -e "$Passwd\n$Passwd\n"|passwd $Login &> /dev/null
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
   echo " ############# Open VPN พร้อมใช้งาน #############    
          ## ไอพี     : $IP          
          ## ชื่อผู้ใช้   : $Login         
          ## รหัสผ่าน  : $Passwd           
-         ## หมดอายุ  : $Day      
-         ####################################################
-         ## ดาวน์โหลดไฟล์ Openvpn ## 
-         ## http://$IP:85/file/$Login.ovpn
-         ####################################################"
+         ## หมดอายุ  : $Day   
+        ------------------------------------------------- 
+        -- ดาวน์โหลดไฟล์ Openvpn--
+        -- http://$IP:85/file/$Login.ovpn --
+        ------------------------------------------------- " 
 		echo ""
 
 cat > /home/vps/public_html/file/$Login.ovpn <<-END
@@ -390,6 +416,11 @@ exit
 if [[ "$zenonnew2" = "" ]]; then
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo "
 ==========================     
   การเซ็ตค่า ชื่อผู้ใช้และรหัสผ่าน      
@@ -405,6 +436,11 @@ case $opcao in
  1 | 01 )
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
  echo " 
    ใส่ชื่อผู้ใช้ที่จะเปลียนชื่อ     
  "
@@ -415,6 +451,11 @@ printf ""
 else
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo -e "\e[31m 
    === ไม่พบชื่อผู้ใช้ ===  "
 echo -e ""
@@ -422,6 +463,11 @@ exit
 fi
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
  echo " 
   กำหนดชื่อใหม่ให้กับ $user  
    "
@@ -439,6 +485,11 @@ exit
 2 | 02 )
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo "
    ใส่ชื่อผู้ใช้ที่จะแก้ไขรหัสผ่าน 
 "
@@ -449,6 +500,11 @@ printf ""
 else
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo -e "\e[31m 
    === ไม่พบชื่อผู้ใช้ ===     "
 echo -e ""
@@ -463,6 +519,11 @@ read -p " : " passwd
 echo -e "$passwd\n$passwd\n"|passwd $user &> /dev/null
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo "
  ==============================================
   รหัสผ่านของ [ $user ] เปลียนเป็น [ $passwd ] เสร็จสมบูรณ์
@@ -473,6 +534,11 @@ exit
 esac
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo -e "${z1} ############# พิมพ์คำสั่งไม่ถูกต้อง ############# ${z7}"
 echo -e ""
 exit
@@ -482,6 +548,11 @@ exit
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo
 echo  " ############# ใส่ชื่อผู้ใช้ที่จะเปลียนวันหมดอายุ ############# "
 read -p " : " namer
@@ -489,6 +560,11 @@ echo "กำหนดวันหมดอายุตัวอย่าง 2018
 read -p " : " date
 chage -E $date $namer 2> /dev/null
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo -e "\033[1;36m 
  สถานะปัจจุบัน $namer หมดอายุวันที่ $date\033[0m"
 echo -e "\e[0m"
@@ -499,6 +575,11 @@ exit
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo
 read -p " ใส่ผู้ใช้ที่จะลบ : " User
 
@@ -506,10 +587,20 @@ if getent passwd $User > /dev/null 2>&1; then
         userdel $User
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo -e "${z1} ############# ใส่ชื่อผู้ใช้ที่จะเปลียนวันหมดอายุ ############# ${z7}"
 else
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo -e "${z1} ############# ไม่พบ $User ในระบบ ############# ${z7}"
 fi
 
@@ -520,6 +611,11 @@ exit
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo "-------------------------------------------------------------"
 echo "                Remover Usuarios Expirados                   "
 echo "-------------------------------------------------------------"
@@ -542,6 +638,11 @@ printf '%-41s' $user
 echo $dataexpn
 fi
 done
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo "-------------------------------------------------------------"
 echo "                Remover Usuarios Expirados                   "
 echo "-------------------------------------------------------------"
@@ -553,6 +654,11 @@ exit
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo -e "" 
 echo "---------------------------------------------"
 echo "BIL    user           status       expires   "
@@ -588,6 +694,11 @@ exit
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo "
   ใส่ชื่อผู้ใช้ที่จะแบน      "
 read -p "  : " Login
@@ -602,6 +713,11 @@ exit
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo "
 ใส่ชื่อผู้ใช้ที่จะปลดแบน       "
 
@@ -619,6 +735,11 @@ exit
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo
 echo " ลบผู้ใช้แล้วไม่สามารถกู้คืนได้      "
 
@@ -665,6 +786,11 @@ exit;;
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo -e "         \033[1;33m   จำนวนผู้ใช้ที่หมดอายุ  \033[0m"
 datahoje=$(date +%s)
 for user in $(cat /etc/passwd |grep -v "nobody" |awk -F : '$3 > 900 {print $1}')
@@ -695,6 +821,11 @@ exit
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo "-------------------------------------------------------------"
 echo " Date-Time    |    PID   |    User Name    |     Dari IP     "
 echo "-------------------------------------------------------------"
@@ -746,6 +877,11 @@ exit
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo "
  ========================
   ใส่ชื่อผู้ใช้ที่ต้องการตรวจสอบ
@@ -774,6 +910,11 @@ if [[ $1 == "" ]]
 then
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo -e "\033[01;35m
  ===================================
   $user หมดอายุแล้ว เมื่อวันที่ $dataexpn
@@ -791,6 +932,11 @@ clear
 clear
  echo -e "\033[01;35m"
  echo "
+ echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
  ============================
   จะต่ออายุให้กับ $user อีกกี่วัน ..?
  ============================"
@@ -800,6 +946,11 @@ expire=$(date -d "$exp days" +"%Y-%m-%d")
 chage -E $expire $user 2> /dev/null
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 expp=$(date -d "$exp days" +"%d-%m-%Y")
 echo -e "\033[01;35m
  ======================================
@@ -809,6 +960,11 @@ echo -e "\033[01;35m
 echo -e "\e[0m"
 exit
 ;;
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
  n | N )
 echo -e "\033[1;31m"
 echo " ลบผู้ใช้เรียบร้อย"
@@ -817,12 +973,22 @@ kill $(ps -u $user |awk '{print $1}') >/dev/null 2>/dev/null ; userdel $user
 exit
 ;;
 esac
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo " "
 echo -e "\033[01;31m === ไม่มีตัวเลือกที่ตรงกัน ===  "
 echo -e "\e[0m"
 else
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo -e "\033[1;35m
        ==============================="
 printf "\033[1;35m"
@@ -840,6 +1006,11 @@ exit
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo
 b-user
 echo ""
@@ -998,6 +1169,11 @@ grep -E "^duplicate-cn" /etc/openvpn/1194.conf >/dev/null
  if [ $? -eq 0 ]; then
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# สถานะ ปัจจุบัณเชื่อมได้ไม่จำกัดเครื่อง ############# "
 
 read -p " เปลียนเป็นจำกัดยุสเซอต่อเครื่องหรือไม่ Y/n :" selet
@@ -1007,16 +1183,31 @@ sed -i $zenonnewvpn /etc/openvpn/1194.conf
 service openvpn restart -q > /dev/null 2>&1
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# สถานะ เปลียนเป็น 1ยุสเซอ ต่อ1เครื่อง ############# "
 exit
 fi
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# สถานะ ปัจจุบัณเชื่อมได้ไม่จำกัดเครื่อง ############# "
 exit
  else
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# สถานะ ปัจจุบัน 1ยุสเซอ ต่อ1เครื่อง ############# "
 
 read -p " เปลียนเป็นไม่จำกัดเครื่องหรือไม่ Y/n :" selet
@@ -1025,11 +1216,21 @@ echo "duplicate-cn" >> /etc/openvpn/1194.conf
 service openvpn restart -q > /dev/null 2>&1
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# สถานะ ปัจจุบัน 1ยุสเซอ ต่อ1เครื่อง ############# "
 exit
 fi
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# สถานะ ปัจจุบัน 1ยุสเซอ ต่อ1เครื่อง ############# "
 exit
 fi
@@ -1039,6 +1240,11 @@ fi
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 speedtest
 echo -e ""
 exit
@@ -1048,6 +1254,11 @@ exit
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo
 	echo -e "Total Data Usage:"
 echo -e "\033[1;31m" 
@@ -1062,6 +1273,11 @@ exit
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 if [[ -e /etc/debian_version ]]; then
 VERSION_ID=$(cat /etc/os-release | grep "VERSION_ID")
 fi
@@ -1126,6 +1342,11 @@ des() {
 }
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# การตั้งค่า Proxy ############# 
               ## 1. เปิดปิดใช้งานไม่จำกัด IP
               ## 2. ตั้งค่าไอพี 
@@ -1164,16 +1385,31 @@ service squid restart -q > /dev/null 2>&1
 fi
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# สถานะปัจจุบัน Proxy ใช้ใด้เฉพาะเซิฟร์นี้ ############# "
 exit
 fi
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# สถานะเปลี่ยนเป็น Proxy ไม่จำกัด IP ############# "
 exit
  else
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# สถานะปัจจุบัน Proxy ใช้ใด้เฉพาะเซิฟร์นี้ ############# "
 
 read -p "เปลี่ยนเป็น Proxy ไม่จำกัด IP หรือไม่ Y/n :" selet
@@ -1698,6 +1934,11 @@ grep -E "^port 1194" /etc/openvpn/1194.conf >/dev/null
  if [ $? -eq 0 ]; then
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานพอต 1194 ############# "
 read -p "  ## เปลียน Openvpn ใช้งานพอต 443 หรือไม่ Y/n :" selet
 if [[ "$selet" = "Y" || "$selet" = "y" ]]; then
@@ -1729,16 +1970,31 @@ service dropbear restart
 service squid3 restart
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานพอต 443 ############# "
 exit
 fi
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานพอต 1194 ############# "
 exit
  else
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานพอต 443 ############# "
 read -p "  ## เปลียน Openvpn ใช้งานพอต 1194 หรือไม่ Y/n :" selet
 if [[ "$selet" = "Y" || "$selet" = "y" ]]; then
@@ -1748,6 +2004,11 @@ sed -i 's/443/1194/g' /etc/openvpn/true.ovpn
 service openvpn restart -q > /dev/null 2>&1
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานพอต 1194 ############# "
 exit
 fi
@@ -1764,6 +2025,11 @@ grep -E "^proto tcp" /etc/openvpn/1194.conf >/dev/null
  if [ $? -eq 0 ]; then
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานโปรโตคอล tcp ############# "
 read -p "  ## เปลียน Openvpn ใช้งานโปรโตคอล udp หรือไม่ Y/n :" selet
 if [[ "$selet" = "Y" || "$selet" = "y" ]]; then
@@ -1785,16 +2051,31 @@ echo " "
 service openvpn restart -q > /dev/null 2>&1
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานโปรโตคอล udp ############# "
 exit
 fi
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานโปรโตคอล tcp ############# "
 exit
  else
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานโปรโตคอล udp ############# "
 read -p "  ## เปลียน Openvpn ใช้งานโปรโตคอล tcp หรือไม่ Y/n :" selet
 if [[ "$selet" = "Y" || "$selet" = "y" ]]; then
@@ -1810,11 +2091,21 @@ echo " "
 service openvpn restart -q > /dev/null 2>&1
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานโปรโตคอล tcp ############# "
 exit
 fi
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# สถานะปัจจุบัญ Openvpn ใช้งานโปรโตคอล udp ############# "
 exit
 fi
@@ -1824,6 +2115,11 @@ fi
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo  " ############# เลือกซิมที่จะใช้ไฟล์นี้ #############
            ## 1. True
            ## 2. Dtac "
@@ -1922,6 +2218,11 @@ fi
 #DEV BY PRATYASART THEEJANMART
 clear
 clear
+echo ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 echo
 echo "             === WELLCOM === "
 echo -e "\033[01;35m"
@@ -1933,6 +2234,7 @@ passwd
 cat > /etc/ssh/sshd_config <<-END
 Port 22
 Port 143
+Port 80
 Protocol 2
 HostKey /etc/ssh/ssh_host_rsa_key
 HostKey /etc/ssh/ssh_host_dsa_key
@@ -1971,7 +2273,11 @@ exit
 if [ -d '/home/vps/public_html/bandwidth' ]; then
 	echo; echo; echo " "
 clear
-cleare
+cleareecho ""
+echo ""
+echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+sleep 0.01
+echo ""
 apt-get update 
 apt-get -y upgrade
 apt-get -y install vnstat
