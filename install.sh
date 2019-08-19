@@ -63,50 +63,46 @@ echo
 exit
 fi
 else
-clear
-cd
-echo
-fi
-
-clear
-# Install openvpn
-cd
-echo ""
+# Color
+GRAY='\033[1;33m'
+GREEN='\033[0;32m'
+NC='\033[0m'
+# ads
 echo ""
 echo ""
 echo -e "\e[33;1m    =============== OS-32 & 64-bit ================    "
 echo -e "\e[33;1m    #                                             #    "
     sleep 0.01
-echo -e "\e[33;1m    #       AUTOSCRIPT CREATED BY PIRAKIT     #    "
+echo -e "\e[33;1m    #       AUTOSCRIPT CREATED BY PIRAKIT         #    "
     sleep 0.01
 echo -e "\e[33;1m    #       -----------About Us------------       #    "
     sleep 0.01
-echo -e "\e[33;1m    #    Thanachart Bank : 270-6-01665-2             #    "
+echo -e "\e[33;1m    #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16     #     "
     sleep 0.01
-echo -e "\e[33;1m    #    Truemoney Wallet : 096-746-2978            #    "
+echo -e "\e[33;1m    #    Truemoney Wallet : 096-746-2978          #    "
     sleep 0.01
 echo -e "\e[33;1m    #               { VPN / SSH }                 #    "
     sleep 0.01
 echo -e "\e[33;1m    #                  NAMNUEA                    #    "
     sleep 0.01
-echo -e "\e[33;1m    #         BY : Pirakit Khawpleum        #    "
+echo -e "\e[33;1m    #         BY : Pirakit Khawpleum              #    "
     sleep 0.01
-echo -e "\e[33;1m    #    FB : https://m.me/pirakrit.khawplum        #    "
+echo -e "\e[33;1m    #    FB : https://m.me/pirakrit.khawplum      #    "
     sleep 0.01
 echo -e "\e[33;1m    #                                             #    "
 echo -e "\e[33;1m    =============== OS-32 & 64-bit ================    "
     sleep 0.01
-echo -e "\e[35m                            ไอพีเซิฟ:$IP                     "
+echo -e "\e[35m                        ไอพีเซิฟ:$IP                     "
 echo ""
 echo ""
+echo "${GREEN}~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~"
 echo ""
-echo "
+# Install openvpn
 ----------------------------------------------
 [√] ระบบสคริป  : Pirakit Khawpleum 
 [√] กรุณารอสักครู่ .....
 [√] Loading .....
 ----------------------------------------------
- "
 ok "➡ apt-get update"
 apt-get update -q > /dev/null 2>&1
 ok "➡ apt-get install openvpn curl openssl"
@@ -647,22 +643,15 @@ echo ""
 echo ""
 echo -e "\e[32m    ##############################################################    "
 echo -e "\e[32m    #                                                            #    "
-echo -e "\e[32m    #   >>>>> [ ระบบสคริป :PRATYASART THEEJANMART ] <<<<<          #    "
+echo -e "\e[32m    #      >>>>> [ ระบบสคริป :PRATYASART THEEJANMART ] <<<<<      #    "
 echo -e "\e[32m    #                                                            #    "
 echo -e "\e[32m    #             SYSTEM MANAGER VPN SSH                         #    "
 echo -e "\e[32m    #                                                            #    "
 echo -e "\e[32m    #    Dropbear       :   22, 443                              #    "
 echo -e "\e[32m    #    SSL            :   444                                  #    "
 echo -e "\e[32m    #    Squid3         :   3128, 8080                           #    "
-echo -e "\e[32m    #    OpenVPN        :   TCP 1194                             #    "
-echo -e "\e[32m    #    Nginx          :   85                                  #    "
-echo -e "\e[32m    #                                                            #    "
-echo -e "\e[32m    #                 TOOLS VPN SSH                              #    "
-echo -e "\e[32m    #                                                            #    "
-echo -e "\e[32m    #    Useronline     :   http://$SERVER_IP/online         #    "
-echo -e "\e[32m    #    Vnstat         :   http://$SERVER_IP/bandwidth      #    "
-echo -e "\e[32m    #    Webmin         :   http://$SERVER_IP:10000          #    "
-echo -e "\e[32m    #    ConfigVPN      :   http://$SERVER_IP:85/$zenon.ovpn      #    "
+echo -e "\e[32m    #    OpenVPN        :   TCP 1194 [Edit] TCP 443                    #    "
+echo -e "\e[32m    #    Nginx          :   85                                   #    "
 echo -e "\e[32m    #                                                            #    "
 echo -e "\e[32m    #             LIMIT SETTINGS VPN SSH                         #    "
 echo -e "\e[32m    #                                                            #    "
@@ -673,7 +662,7 @@ echo -e "\e[32m    #    Fail2Ban       :   [ON]                                 
 echo -e "\e[32m    #    DDOS Deflate   :   [ON]                                 #    "
 echo -e "\e[32m    #    LibXML Parser  :   [ON]                                 #    "
 echo -e "\e[32m    #                                                            #    "
-echo -e "\e[32m    #          ติดตั้งสำเร็จ... กรุณาพิมพ์คำสั่ง   z เพื่อไปยังขั้นตอนถัดไป        #            " 
+echo -e "\e[32m    #    ติดตั้งสำเร็จ... กรุณาพิมพ์คำสั่ง    z เพื่อไปยังขั้นตอนถัดไป         #   " 
 echo -e "\e[32m    #                                                            #    "
 echo -e "\e[32m    ##############################################################    "
 echo -e "\e[0m                                                                       "
