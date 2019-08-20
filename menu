@@ -264,7 +264,7 @@ echo -e "${z1} ############# พิมพ์คำสั่งไม่ถูก
 echo -e ""
 	exit
 	elif [[ "$zenonnew" = "1" ]]; then
-	sim="Trueid"
+	sim="Client"
 	elif [[ "$zenonnew" = "2" ]]; then
 	sim="Dtacไวเบอร์"
    elif [[ "$zenonnew" = "3" ]]; then
@@ -351,7 +351,7 @@ echo -e "${z1} ############# พิมพ์คำสั่งไม่ถูก
 echo -e ""
 	exit
 	elif [[ "$zenonnew" = "1" ]]; then
-	sim="Trueid"
+	sim="Client"
 	elif [[ "$zenonnew" = "2" ]]; then
 	sim="Dtacไวเบอร์"
    elif [[ "$zenonnew" = "3" ]]; then
