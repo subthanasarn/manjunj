@@ -156,14 +156,13 @@ script-security 3
 
 Dtacไวเบอร์
 
-cat > /etc/openvpn/Trueid.ovpn << Trueid
+cat > /etc/openvpn/Client.ovpn << Client
 client
 dev tun
 proto tcp
-remote Trueid 999 udp
+remote Client 999 udp
 remote $SERVER_IP 1194
 http-proxy-retry
-http-proxy-option CUSTOM-HEADER X-Online-Host kd.truevisions.tv
 http-proxy $SERVER_IP 8080
 connect-retry 1
 connect-timeout 120
@@ -181,7 +180,7 @@ cipher none
 comp-lzo
 script-security 3
 
-Trueid
+Client
 
 cat > /etc/openvpn/Dtacโซเชี่ยว.ovpn << Dtacโซเชี่ยว
 client
