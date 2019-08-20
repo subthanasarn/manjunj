@@ -687,7 +687,7 @@ echo -e "\e[32m    #      >>>>> [ ระบบสคริป :PRATYASART THEEJA
 echo -e "\e[32m    #                                                            #    "
 echo -e "\e[32m    #             SYSTEM MANAGER VPN SSH                         #    "
 echo -e "\e[32m    #                                                            #    "
-echo -e "\e[32m    #    Dropbear       :   22, 443 , 80                         #    "
+echo -e "\e[32m    #    Dropbear       :   22, 443                      #    "
 echo -e "\e[32m    #    SSL            :   444                                  #    "
 echo -e "\e[32m    #    Squid3         :   3128, 8080                           #    "
 echo -e "\e[32m    #    OpenVPN        :   TCP 1194 [Edit] TCP 443              #    "
