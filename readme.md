@@ -1,8 +1,4 @@
-sudo -i
-===========
-wget https://raw.githubusercontent.com/MyGatherBk/aungwin/master/install.sh && chmod +x install.sh
-bash install.sh
-=======================
+
 sudo -i
 ==================
 wget https://raw.githubusercontent.com/MyGatherBk/aungwin/master/install.sh && chmod +x install.sh && bash install.sh
