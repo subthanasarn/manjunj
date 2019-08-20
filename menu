@@ -72,7 +72,7 @@ echo -e "\e[33;1m    =============== OS-32 & 64-bit ================    "
 echo -e "\e[35m                        ไอพีเซิฟ:$IP                     "
 echo ""
 echo ""
-echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+echo -e "\033[1;36m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
 sleep 0.01
 echo ""
 echo ""
