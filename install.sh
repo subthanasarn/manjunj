@@ -75,33 +75,23 @@ clear
 # ads
 echo ""
 echo ""
-echo -e "\e[33;1m    =============== OS-32 & 64-bit ================    "
-echo -e "\e[33;1m    #                                             #    "
-    sleep 0.01
-echo -e "\e[33;1m    #       AUTOSCRIPT CREATED BY PIRAKIT         #    "
-    sleep 0.01
-echo -e "\e[33;1m    #       -----------About Us------------       #    "
-    sleep 0.01
-echo -e "\e[33;1m    #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16     #     "
-    sleep 0.01
-echo -e "\e[33;1m    #    Truemoney Wallet : 096-746-2978          #    "
-    sleep 0.01
-echo -e "\e[33;1m    #               { VPN / SSH }                 #    "
-    sleep 0.01
-echo -e "\e[33;1m    #                  NAMNUEA                    #    "
-    sleep 0.01
-echo -e "\e[33;1m    #         BY : Pirakit Khawpleum              #    "
-    sleep 0.01
-echo -e "\e[33;1m    #    FB : https://m.me/pirakrit.khawplum      #    "
-    sleep 0.01
-echo -e "\e[33;1m    #                                             #    "
-echo -e "\e[33;1m    =============== OS-32 & 64-bit ================    "
-    sleep 0.01
-echo -e "\e[35m                        ไอพีเซิฟ:$IP                     "
+echo "    #=============== OS-32 & 64-bit ================    "
+echo "    #                                              #    "
+echo "    #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "    #      -----------About Us------------         #    "
+echo "    #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16      #    "
+echo "    #    Truemoney Wallet : 096-746-2978           #    "
+echo "    #               { VPN / SSH }                  #    "
+echo "    #                  NAMNUEA                     #    "
+echo "    #         BY : Pirakit Khawpleum               #    "
+echo "    #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "    #                                              #    "
+echo "    =============== OS-32 & 64-bit =================    "
 echo ""
+echo "    ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
 echo ""
-echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
-sleep 0.01
+echo " ไอพีเซิฟ:$IP "
+echo ""
 echo ""
 # Install openvpn
 cd
@@ -129,173 +119,7 @@ wget -q -O ovpn.tar "https://raw.githubusercontent.com/MyGatherBk/aungwin/master
 tar xf ovpn.tar
 rm ovpn.tar
 
-cat > /etc/openvpn/Dtacไวเบอร์.ovpn << Dtacไวเบอร์
-client
-dev tun
-proto tcp
-remote ไวเบอร์ 999 udp
-remote $SERVER_IP:1194@www.viber.com
-http-proxy $SERVER_IP 8080
-http-proxy-option CUSTOM-HEADER Host:www.viber.com
-http-proxy-timeout 5
-connect-retry 1
-connect-timeout 120
-resolv-retry infinite
-route-method exe
-nobind
-ping 5
-ping-restart 30
-persist-key
-persist-tun
-persist-remote-ip
-mute-replay-warnings
-verb 3
-cipher none
-comp-lzo
-script-security 3
-
-Dtacไวเบอร์
-
-cat > /etc/openvpn/Client.ovpn << Client
-client
-dev tun
-proto tcp
-remote Client 999 udp
-remote $SERVER_IP 1194
-http-proxy-retry
-http-proxy $SERVER_IP 8080
-connect-retry 1
-connect-timeout 120
-resolv-retry infinite
-route-method exe
-nobind
-ping 5
-ping-restart 30
-persist-key
-persist-tun
-persist-remote-ip
-mute-replay-warnings
-verb 3
-cipher none
-comp-lzo
-script-security 3
-
-Client
-
-cat > /etc/openvpn/Dtacโซเชี่ยว.ovpn << Dtacโซเชี่ยว
-client
-dev tun
-proto tcp
-remote โซเชี่ยว 999 udp
-remote $SERVER_IP:1194@kd.truevisions.tv.line.naver.jp
-http-proxy $SERVER_IP 8080
-http-proxy-option CUSTOM-HEADER Host:api.twitter.com
-connect-retry 1
-connect-timeout 120
-resolv-retry infinite
-route-method exe
-nobind
-ping 5
-ping-restart 30
-persist-key
-persist-tun
-persist-remote-ip
-mute-replay-warnings
-verb 3
-cipher none
-comp-lzo
-script-security 3
-
-Dtacโซเชี่ยว
-
-cat > /etc/openvpn/faceline.ovpn << faceline
-client
-dev tun
-proto tcp
-remote face+line 999 udp
-remote $SERVER_IP 443
-http-proxy-retry
-http-proxy 10.4.4.4 8080
-http-proxy-option CUSTOM-HEADER "Host: line.naver.jp
-http-proxy-option CUSTOM-HEADER "X-Online-Host: line.naver.jp
-http-proxy-option CUSTOM-HEADER "X-Forward-Host: line.naver.jp
-http-proxy-option CUSTOM-HEADER "X-Forwarded-For: line.naver.jp
-http-proxy-option CUSTOM-HEADER "Referer: line.naver.jp
-http-proxy-option CUSTOM-HEADER "Connection: keep-alive"
-http-proxy-option CUSTOM-HEADER "Proxy-Connection: keep-alive"
-connect-retry 1
-connect-timeout 120
-resolv-retry infinite
-route-method exe
-nobind
-ping 5
-ping-restart 30
-persist-key
-persist-tun
-persist-remote-ip
-mute-replay-warnings
-verb 3
-cipher none
-comp-lzo
-script-security 3
-
-faceline
-
-cat > /etc/openvpn/Trueปลูกปัญญา.ovpn << Trueปลูกปัญญา
-client
-dev tun
-proto tcp
-remote Trueปลูกปัญญา 999 udp
-remote $SERVER_IP:1194@th.m.wikipedia.org
-http-proxy-retry
-http-proxy-option CUSTOM-HEADER X-Online-Host th.m.wikipedia.org
-http-proxy $SERVER_IP 8080
-connect-retry 1
-connect-timeout 120
-resolv-retry infinite
-route-method exe
-nobind
-ping 5
-ping-restart 30
-persist-key
-persist-tun
-persist-remote-ip
-mute-replay-warnings
-verb 3
-cipher none
-comp-lzo
-script-security 3
-
-Trueปลูกปัญญา
-
-cat > /etc/openvpn/AIS64kbps.ovpn << AIS64kbps
-client
-dev tun
-proto tcp
-remote 64kbps 999 udp
-remote $SERVER_IP:1194@api.ais.co.th
-http-proxy $SERVER_IP 8080
-http-proxy-option CUSTOM-HEADER Host t.co
-http-proxy-timeout 5
-connect-retry 1
-connect-timeout 120
-resolv-retry infinite
-route-method exe
-nobind
-ping 5
-ping-restart 30
-persist-key
-persist-tun
-persist-remote-ip
-mute-replay-warnings
-verb 3
-cipher none
-comp-lzo
-script-security 3
-
-AIS64kbps
-
-cat > /etc/openvpn/hanoi.ovpn << hanoi
+cat > /etc/openvpn/client.ovpn << client
 client
 dev tun
 proto tcp
@@ -317,33 +141,7 @@ cipher none
 comp-lzo
 script-security 3
 
-hanoi
-
-cat > /etc/openvpn/aisplay.ovpn << aisplay
 client
-dev tun
-proto tcp
-remote aisplay 999 udp
-remote $SERVER_IP:1194@play.ais.co.th
-http-proxy-option CUSTOM-HEADER Host api.ais.co.th
-http-proxy $SERVER_IP 8080
-connect-retry 1
-connect-timeout 120
-resolv-retry infinite
-route-method exe
-nobind
-ping 5
-ping-restart 30
-persist-key
-persist-tun
-persist-remote-ip
-mute-replay-warnings
-verb 3
-cipher none
-comp-lzo
-script-security 3
-
-aisplay
 
 # Restart Service
 ok "➡ service openvpn restart"
@@ -546,9 +344,9 @@ socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
 
-[dropbear]
+[stunnel]
 accept = 444
-connect = 127.0.0.1:3128
+connect = 127.0.0.1:22
 
 END
 
@@ -644,35 +442,24 @@ clear
 # ads
 echo ""
 echo ""
-echo -e "\e[33;1m    =============== OS-32 & 64-bit ================    "
-echo -e "\e[33;1m    #                                             #    "
-    sleep 0.01
-echo -e "\e[33;1m    #       AUTOSCRIPT CREATED BY PIRAKIT         #    "
-    sleep 0.01
-echo -e "\e[33;1m    #       -----------About Us------------       #    "
-    sleep 0.01
-echo -e "\e[33;1m    #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16     #     "
-    sleep 0.01
-echo -e "\e[33;1m    #    Truemoney Wallet : 096-746-2978          #    "
-    sleep 0.01
-echo -e "\e[33;1m    #               { VPN / SSH }                 #    "
-    sleep 0.01
-echo -e "\e[33;1m    #                  NAMNUEA                    #    "
-    sleep 0.01
-echo -e "\e[33;1m    #         BY : Pirakit Khawpleum              #    "
-    sleep 0.01
-echo -e "\e[33;1m    #    FB : https://m.me/pirakrit.khawplum      #    "
-    sleep 0.01
-echo -e "\e[33;1m    #                                             #    "
-echo -e "\e[33;1m    =============== OS-32 & 64-bit ================    "
-    sleep 0.01
-echo -e "\e[35m                        ไอพีเซิฟ:$IP                     "
+echo "    #=============== OS-32 & 64-bit ================    "
+echo "    #                                              #    "
+echo "    #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "    #      -----------About Us------------         #    "
+echo "    #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16      #    "
+echo "    #    Truemoney Wallet : 096-746-2978           #    "
+echo "    #               { VPN / SSH }                  #    "
+echo "    #                  NAMNUEA                     #    "
+echo "    #         BY : Pirakit Khawpleum               #    "
+echo "    #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "    #                                              #    "
+echo "    =============== OS-32 & 64-bit =================    "
+echo ""
+echo "    ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
+echo ""
+echo " ไอพีเซิฟ:$IP "
 echo ""
 echo ""
-echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
-sleep 0.01
-echo ""
-echo "
 ----------------------------------------------
 [√] INSTALL SUCCESS ^^
 [√] การติดตั้งเสร็จสมบรูณ์ .....
@@ -682,11 +469,11 @@ echo ""
 echo ""
 echo -e "\e[32m    ##############################################################    "
 echo -e "\e[32m    #                                                            #    "
-echo -e "\e[32m    #      >>>>> [ ระบบสคริป :PRATYASART THEEJANMART ] <<<<<      #    "
+echo -e "\e[32m    #      >>>>> [ ระบบสคริป :PRATYASART THEEJANMART ] <<<<<       #    "
 echo -e "\e[32m    #                                                            #    "
 echo -e "\e[32m    #             SYSTEM MANAGER VPN SSH                         #    "
 echo -e "\e[32m    #                                                            #    "
-echo -e "\e[32m    #    Dropbear       :   22, 443                      #    "
+echo -e "\e[32m    #    Dropbear       :   22, 443                              #    "
 echo -e "\e[32m    #    SSL            :   444                                  #    "
 echo -e "\e[32m    #    Squid3         :   3128, 8080                           #    "
 echo -e "\e[32m    #    OpenVPN        :   TCP 1194 [Edit] TCP 443              #    "
@@ -701,7 +488,7 @@ echo -e "\e[32m    #    Fail2Ban       :   [ON]                                 
 echo -e "\e[32m    #    DDOS Deflate   :   [ON]                                 #    "
 echo -e "\e[32m    #    LibXML Parser  :   [ON]                                 #    "
 echo -e "\e[32m    #                                                            #    "
-echo -e "\e[32m    #    ติดตั้งสำเร็จ... กรุณาพิมพ์คำสั่ง    z เพื่อไปยังขั้นตอนถัดไป         #   " 
+echo -e "\e[32m    #    ติดตั้งสำเร็จ... กรุณาพิมพ์คำสั่ง    z เพื่อไปยังขั้นตอนถัดไป                                        #          "
 echo -e "\e[32m    #                                                            #    "
 echo -e "\e[32m    ##############################################################    "
 echo -e "\e[0m                                                                       "
