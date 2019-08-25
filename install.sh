@@ -124,7 +124,174 @@ wget -q -O ovpn.tar "https://raw.githubusercontent.com/MyGatherBk/aungwin/master
 tar xf ovpn.tar
 rm ovpn.tar
 
-cat > /etc/openvpn/client.ovpn << client
+cat > /etc/openvpn/Dtacไวเบอร์.ovpn << Dtacไวเบอร์
+client
+dev tun
+proto tcp
+remote ไวเบอร์ 999 udp
+remote $SERVER_IP:1194@www.viber.com
+http-proxy $SERVER_IP 8080
+http-proxy-option CUSTOM-HEADER Host:www.viber.com
+http-proxy-timeout 5
+connect-retry 1
+connect-timeout 120
+resolv-retry infinite
+route-method exe
+nobind
+ping 5
+ping-restart 30
+persist-key
+persist-tun
+persist-remote-ip
+mute-replay-warnings
+verb 3
+cipher none
+comp-lzo
+script-security 3
+
+Dtacไวเบอร์
+
+cat > /etc/openvpn/Trueid.ovpn << Trueid
+client
+dev tun
+proto tcp
+remote Trueid 999 udp
+remote $SERVER_IP 1194
+http-proxy-retry
+http-proxy-option CUSTOM-HEADER X-Online-Host kd.truevisions.tv
+http-proxy $SERVER_IP 8080
+connect-retry 1
+connect-timeout 120
+resolv-retry infinite
+route-method exe
+nobind
+ping 5
+ping-restart 30
+persist-key
+persist-tun
+persist-remote-ip
+mute-replay-warnings
+verb 3
+cipher none
+comp-lzo
+script-security 3
+
+Trueid
+
+cat > /etc/openvpn/Dtacโซเชี่ยว.ovpn << Dtacโซเชี่ยว
+client
+dev tun
+proto tcp
+remote โซเชี่ยว 999 udp
+remote $SERVER_IP:1194@kd.truevisions.tv.line.naver.jp
+http-proxy $SERVER_IP 8080
+http-proxy-option CUSTOM-HEADER Host:api.twitter.com
+connect-retry 1
+connect-timeout 120
+resolv-retry infinite
+route-method exe
+nobind
+ping 5
+ping-restart 30
+persist-key
+persist-tun
+persist-remote-ip
+mute-replay-warnings
+verb 3
+cipher none
+comp-lzo
+script-security 3
+
+Dtacโซเชี่ยว
+
+cat > /etc/openvpn/faceline.ovpn << faceline
+client
+dev tun
+proto tcp
+remote face+line 999 udp
+remote $SERVER_IP 443
+http-proxy-retry
+http-proxy 10.4.4.4 8080
+http-proxy-option CUSTOM-HEADER "Host: line.naver.jp
+http-proxy-option CUSTOM-HEADER "X-Online-Host: line.naver.jp
+http-proxy-option CUSTOM-HEADER "X-Forward-Host: line.naver.jp
+http-proxy-option CUSTOM-HEADER "X-Forwarded-For: line.naver.jp
+http-proxy-option CUSTOM-HEADER "Referer: line.naver.jp
+http-proxy-option CUSTOM-HEADER "Connection: keep-alive"
+http-proxy-option CUSTOM-HEADER "Proxy-Connection: keep-alive"
+connect-retry 1
+connect-timeout 120
+resolv-retry infinite
+route-method exe
+nobind
+ping 5
+ping-restart 30
+persist-key
+persist-tun
+persist-remote-ip
+mute-replay-warnings
+verb 3
+cipher none
+comp-lzo
+script-security 3
+
+faceline
+
+cat > /etc/openvpn/Trueปลูกปัญญา.ovpn << Trueปลูกปัญญา
+client
+dev tun
+proto tcp
+remote Trueปลูกปัญญา 999 udp
+remote $SERVER_IP:1194@th.m.wikipedia.org
+http-proxy-retry
+http-proxy-option CUSTOM-HEADER X-Online-Host th.m.wikipedia.org
+http-proxy $SERVER_IP 8080
+connect-retry 1
+connect-timeout 120
+resolv-retry infinite
+route-method exe
+nobind
+ping 5
+ping-restart 30
+persist-key
+persist-tun
+persist-remote-ip
+mute-replay-warnings
+verb 3
+cipher none
+comp-lzo
+script-security 3
+
+Trueปลูกปัญญา
+
+cat > /etc/openvpn/AIS64kbps.ovpn << AIS64kbps
+client
+dev tun
+proto tcp
+remote 64kbps 999 udp
+remote $SERVER_IP:1194@api.ais.co.th
+http-proxy $SERVER_IP 8080
+http-proxy-option CUSTOM-HEADER Host t.co
+http-proxy-timeout 5
+connect-retry 1
+connect-timeout 120
+resolv-retry infinite
+route-method exe
+nobind
+ping 5
+ping-restart 30
+persist-key
+persist-tun
+persist-remote-ip
+mute-replay-warnings
+verb 3
+cipher none
+comp-lzo
+script-security 3
+
+AIS64kbps
+
+cat > /etc/openvpn/hanoi.ovpn << hanoi
 client
 dev tun
 proto tcp
@@ -146,7 +313,33 @@ cipher none
 comp-lzo
 script-security 3
 
+hanoi
+
+cat > /etc/openvpn/aisplay.ovpn << aisplay
 client
+dev tun
+proto tcp
+remote aisplay 999 udp
+remote $SERVER_IP:1194@play.ais.co.th
+http-proxy-option CUSTOM-HEADER Host api.ais.co.th
+http-proxy $SERVER_IP 8080
+connect-retry 1
+connect-timeout 120
+resolv-retry infinite
+route-method exe
+nobind
+ping 5
+ping-restart 30
+persist-key
+persist-tun
+persist-remote-ip
+mute-replay-warnings
+verb 3
+cipher none
+comp-lzo
+script-security 3
+
+aisplay
 
 # Restart Service
 ok "➡ service openvpn restart"
