@@ -46,8 +46,6 @@ des() {
     echo -e '\e[1;31m'$1'\e[m'; exit 1;
 }
 
-# Set Localtime GMT +7
-ln -fs /usr/share/zoneinfo/Asia/Bangkok /etc/localtime
 
 #
 #<BODY text='ffffff'>
