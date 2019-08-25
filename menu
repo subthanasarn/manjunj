@@ -237,11 +237,18 @@ echo ""
 echo -e "\033[1;31m ~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~ "
 sleep 0.01
 echo ""
-echo "    ╭━━━━━━━━━━━━━━━━━━━━━╮ "
-echo "    ┣ เลือกไฟล์นี้      "
-echo "    ╰━━━━━━━━━━━━━━━━╯   "
-echo "    ╰━━ 1. Client "
-read -p " ╰━━ " zenonnew
+echo "     ╭━━━━━━━━━━━━━━━━━━━━━━╮ "
+echo "     ┃ เลือกซิมที่จะใช้ไฟล์นี้  "
+echo "     ┣━━━━━━━━━━━━━━━━━━━━━━╯ "
+echo "     ┣ 1. Trueid "
+echo "     ┣ 2. Dtacไวเบอร์ "
+echo "     ┣ 3. Dtacโซเชี่ยว  "
+echo "     ┣ 4. True face+line (*935*99#) "
+echo "     ┣ 5. Trueปลูกปัญญา "
+echo "     ┣ 6. AIS64kbps  "
+echo "     ┣ 7. AISplay "
+echo "     ┣ 8. client "
+read -p "  ╰━━┫ " zenonnew
 	if [[ "$zenonnew" = "" ]]; then
 clear
 clear
@@ -333,10 +340,16 @@ sleep 0.01
 echo ""
 echo -e "\033[1;31m Truemoney Wallet : 096-746-2978  "
 sleep 0.01
-echo ""
-  echo "
- เลือกโปรที่จะใช้ไฟล์นี้ 
- 1. client "
+  echo ""
+  echo " เลือกโปรที่จะใช้ไฟล์นี้   "
+  echo " 1. Trueid  "
+  echo " 2. Dtacviber  "
+  echo " 3. Dtacโซเชี่ยว   "
+  echo "4. True  face+line (*935*99#)  "
+  echo " 5. Trueปลูกปัญญา  "
+  echo " 6. AIS64kbps  "
+  echo " 7. AISplay  "
+  echo "8. client  "
 	read -p " EnterNamber : " zenonnew
 	if [[ "$zenonnew" = "" ]]; then
 clear
