@@ -6,12 +6,17 @@ clear
 IP=$(wget -4qO- "http://whatismyip.akamai.com/")
 # fi
 
-if [ $USER != 'root' ]; then
-	echo "คุณต้องเรียกใช้งานนี้เป็น root"
-	exit
+if [[ $(id -g) != "0" ]] ; then
+    echo ""
+    echo "Scrip : สั่งรูทคำสั่ง [ sudo -i ] ก่อนรันสคริปนี้  "
+    echo ""
+    exit
 fi
 
-#OS
+if [[  ! -e /dev/net/tun ]] ; then
+    echo "Scrip : TUN/TAP device is not available."
+fi
+cd
 if [[ -e /etc/debian_version ]]; then
 VERSION_ID=$(cat /etc/os-release | grep "VERSION_ID")
 fi
@@ -75,7 +80,7 @@ clear
 # ads
 echo ""
 echo ""
-echo "    #=============== OS-32 & 64-bit ================    "
+echo "    =============== OS-32 & 64-bit =================    "
 echo "    #                                              #    "
 echo "    #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
 echo "    #      -----------About Us------------         #    "
@@ -283,7 +288,6 @@ server {
 }
 END
 ok "➡ service nginx restart"
-service nginx restart 
 
 #install php-fpm
 if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
@@ -323,14 +327,6 @@ echo "/usr/sbin/nologin" >> /etc/shells
 ok "➡ service dropbear restart"
 service dropbear restart > /dev/null 2>&1
 
-#detail nama perusahaan
-country=ID
-state=Thailand
-locality=Tebet
-organization=zenon
-organizationalunit=IT
-commonname=www.zenon.tk
-facebook=EkkachaiChompoowiset
 
 
 # install stunnel
@@ -360,7 +356,7 @@ service stunnel4 restart > /dev/null 2>&1
 
 # install vnstat gui
 ok "➡ apt-get install vnstat"
-apt-get install -qy vnstat > /dev/null 2>&1
+apt-get -y install vnstat > /dev/null 2>&1
 chown -R vnstat:vnstat /var/lib/vnstat
 cd /home/vps/public_html
 wget -q http://www.sqweek.com/sqweek/files/vnstat_php_frontend-1.5.1.tar.gz
@@ -434,15 +430,13 @@ ok "➡ apt-get install XML Parser"
 cd
 apt-get -y --force-yes -f install libxml-parser-perl
 
-echo "ติดตั้งสำเร็จ" > /usr/bin/350_fulle
-mv /etc/openvpn/zenon.ovpn /home/vps/public_html/zenon.ovpn
 
 clear
 clear
 # ads
 echo ""
 echo ""
-echo "    #=============== OS-32 & 64-bit ================    "
+echo "    =============== OS-32 & 64-bit =================    "
 echo "    #                                              #    "
 echo "    #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
 echo "    #      -----------About Us------------         #    "
