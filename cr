@@ -4,7 +4,7 @@ if [[ "$IP" = "" ]]; then
 fi
 echo ""
 echo ""
-echo "    #=============== OS-32 & 64-bit ================    "
+echo "    =============== OS-32 & 64-bit =================    "
 echo "    #                                              #    "
 echo "    #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
 echo "    #      -----------About Us------------         #    "
